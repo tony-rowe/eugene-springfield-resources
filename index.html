@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lane County Community Resource Directory — Eugene &amp; Springfield, OR</title>
+<meta name="description" content="A comprehensive directory of community services and organizations serving Eugene, Springfield, and Lane County, Oregon.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest:    #1c3d2f;
+    --moss:      #2e5e44;
+    --sage:      #4d8c65;
+    --sage-lt:   #7db895;
+    --amber:     #c8743a;
+    --amber-lt:  #e09060;
+    --cream:     #f5f0e8;
+    --parchment: #ede6d6;
+    --ink:       #1a1a18;
+    --ink-mid:   #3d3d38;
+    --ink-lt:    #6b6b62;
+    --white:     #ffffff;
+    --shadow-sm: 0 1px 3px rgba(28,61,47,.10), 0 1px 2px rgba(28,61,47,.08);
+    --shadow-md: 0 4px 12px rgba(28,61,47,.13), 0 2px 4px rgba(28,61,47,.08);
+    --shadow-lg: 0 12px 32px rgba(28,61,47,.18);
+    --radius:    10px;
+    --radius-lg: 16px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--forest);
+    background-image:
+      radial-gradient(ellipse 120% 80% at 70% 110%, #2e5e44 0%, transparent 60%),
+      radial-gradient(ellipse 60% 60% at 10% -20%, #3a6b4e 0%, transparent 55%);
+    color: var(--white);
+    padding: 72px 24px 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 40px, rgba(255,255,255,.018) 40px, rgba(255,255,255,.018) 41px),
+      repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(255,255,255,.018) 60px, rgba(255,255,255,.018) 61px);
+    pointer-events: none;
+  }
+
+  .hero-badge {
+    display: inline-block;
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.22);
+    color: var(--sage-lt);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 40px;
+    margin-bottom: 22px;
+  }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.1rem, 5.5vw, 3.8rem);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -.015em;
+    max-width: 780px;
+    margin: 0 auto 18px;
+    text-shadow: 0 2px 20px rgba(0,0,0,.25);
+  }
+
+  .hero h1 span { color: var(--amber-lt); }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    font-weight: 300;
+    color: rgba(255,255,255,.76);
+    max-width: 540px;
+    margin: 0 auto 36px;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .stat-pill {
+    background: rgba(255,255,255,.10);
+    border: 1px solid rgba(255,255,255,.18);
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-size: .82rem;
+    font-weight: 500;
+    color: rgba(255,255,255,.88);
+  }
+
+  .stat-pill strong { color: var(--amber-lt); }
+
+  /* ── EMERGENCY BANNER ── */
+  .emergency-bar {
+    background: #7b1e1e;
+    color: #fff;
+    padding: 12px 24px;
+    text-align: center;
+    font-size: .85rem;
+    font-weight: 500;
+    letter-spacing: .01em;
+  }
+
+  .emergency-bar a { color: #ffc9a0; text-decoration: none; font-weight: 600; }
+  .emergency-bar a:hover { text-decoration: underline; }
+
+  .emergency-bar .divider {
+    display: inline-block;
+    margin: 0 12px;
+    opacity: .5;
+  }
+
+  /* ── SEARCH & FILTER ── */
+  .controls {
+    background: var(--white);
+    border-bottom: 1px solid rgba(28,61,47,.10);
+    padding: 18px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(28,61,47,.08);
+  }
+
+  .controls-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .search-wrap {
+    position: relative;
+    flex: 1 1 260px;
+  }
+
+  .search-wrap svg {
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--ink-lt);
+    pointer-events: none;
+  }
+
+  #searchInput {
+    width: 100%;
+    padding: 10px 14px 10px 40px;
+    border: 1.5px solid rgba(28,61,47,.18);
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .92rem;
+    background: var(--cream);
+    color: var(--ink);
+    outline: none;
+    transition: border-color .2s;
+  }
+
+  #searchInput:focus { border-color: var(--sage); }
+
+  .filter-scroll {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+  }
+
+  .filter-btn {
+    padding: 7px 16px;
+    border-radius: 30px;
+    border: 1.5px solid rgba(28,61,47,.18);
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .82rem;
+    font-weight: 500;
+    cursor: pointer;
+    color: var(--ink-mid);
+    transition: all .18s;
+    white-space: nowrap;
+  }
+
+  .filter-btn:hover { border-color: var(--sage); color: var(--forest); }
+
+  .filter-btn.active {
+    background: var(--forest);
+    border-color: var(--forest);
+    color: var(--white);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .results-count {
+    font-size: .8rem;
+    color: var(--ink-lt);
+    white-space: nowrap;
+    font-family: 'DM Mono', monospace;
+  }
+
+  /* ── MAIN LAYOUT ── */
+  .main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 32px 20px 80px;
+  }
+
+  /* ── SECTION HEADERS ── */
+  .category-section {
+    margin-bottom: 52px;
+  }
+
+  .category-section[data-hidden="true"] { display: none; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 22px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid rgba(28,61,47,.10);
+  }
+
+  .section-icon {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.35rem;
+    flex-shrink: 0;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--forest);
+    line-height: 1.2;
+  }
+
+  .section-desc {
+    font-size: .84rem;
+    color: var(--ink-lt);
+    margin-top: 2px;
+  }
+
+  .section-count {
+    margin-left: auto;
+    font-family: 'DM Mono', monospace;
+    font-size: .78rem;
+    color: var(--ink-lt);
+    background: var(--parchment);
+    padding: 3px 10px;
+    border-radius: 20px;
+    flex-shrink: 0;
+  }
+
+  /* ── CARD GRID ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+
+  /* ── ORG CARD ── */
+  .org-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    padding: 20px 22px;
+    border: 1px solid rgba(28,61,47,.07);
+    transition: box-shadow .22s, transform .22s, border-color .22s;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .org-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--card-accent, var(--sage));
+    border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+    opacity: 0;
+    transition: opacity .22s;
+  }
+
+  .org-card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+    border-color: rgba(28,61,47,.14);
+  }
+
+  .org-card:hover::before { opacity: 1; }
+
+  .org-card[data-hidden="true"] { display: none; }
+
+  .org-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--forest);
+    line-height: 1.25;
+    margin-bottom: 6px;
+  }
+
+  .org-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+
+  .tag {
+    font-size: .72rem;
+    font-weight: 500;
+    padding: 2px 9px;
+    border-radius: 20px;
+    background: var(--parchment);
+    color: var(--ink-mid);
+    font-family: 'DM Mono', monospace;
+    letter-spacing: .02em;
+  }
+
+  .tag.urgent { background: #fde8e8; color: #8b1a1a; }
+  .tag.free   { background: #e8f5ee; color: #1c5e38; }
+
+  .org-desc {
+    font-size: .88rem;
+    color: var(--ink-mid);
+    line-height: 1.55;
+    margin-bottom: 14px;
+    flex: 1;
+  }
+
+  .org-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-top: 1px solid rgba(28,61,47,.07);
+    padding-top: 12px;
+    margin-top: auto;
+  }
+
+  .meta-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: .82rem;
+    color: var(--ink-lt);
+  }
+
+  .meta-row svg { flex-shrink: 0; margin-top: 1px; }
+
+  .meta-row a {
+    color: var(--moss);
+    text-decoration: none;
+    word-break: break-all;
+    font-weight: 500;
+  }
+
+  .meta-row a:hover { text-decoration: underline; color: var(--forest); }
+
+  .phone-link { color: var(--amber) !important; }
+
+  /* ── ACCENT COLORS BY CATEGORY ── */
+  .cat-crisis   { --card-accent: #b91c1c; }
+  .cat-crisis .section-icon { background: #fde8e8; }
+  .cat-housing  { --card-accent: #1d4ed8; }
+  .cat-housing .section-icon { background: #eff6ff; }
+  .cat-food     { --card-accent: #d97706; }
+  .cat-food .section-icon { background: #fef3c7; }
+  .cat-health   { --card-accent: #0891b2; }
+  .cat-health .section-icon { background: #ecfeff; }
+  .cat-youth    { --card-accent: #7c3aed; }
+  .cat-youth .section-icon { background: #f5f3ff; }
+  .cat-seniors  { --card-accent: #b45309; }
+  .cat-seniors .section-icon { background: #fffbeb; }
+  .cat-disability { --card-accent: #0f766e; }
+  .cat-disability .section-icon { background: #f0fdfa; }
+  .cat-lgbtq    { --card-accent: #be185d; }
+  .cat-lgbtq .section-icon { background: #fdf2f8; }
+  .cat-legal    { --card-accent: #1e3a5f; }
+  .cat-legal .section-icon { background: #eff6ff; }
+  .cat-employment { --card-accent: #15803d; }
+  .cat-employment .section-icon { background: #f0fdf4; }
+  .cat-multicultural { --card-accent: #b45309; }
+  .cat-multicultural .section-icon { background: #fef3c7; }
+  .cat-education { --card-accent: #7c3aed; }
+  .cat-education .section-icon { background: #f5f3ff; }
+  .cat-environment { --card-accent: #166534; }
+  .cat-environment .section-icon { background: #f0fdf4; }
+  .cat-arts     { --card-accent: #c2410c; }
+  .cat-arts .section-icon { background: #fff7ed; }
+  .cat-veterans { --card-accent: #1e3a5f; }
+  .cat-veterans .section-icon { background: #eff6ff; }
+  .cat-animals  { --card-accent: #92400e; }
+  .cat-animals .section-icon { background: #fef3c7; }
+  .cat-faith    { --card-accent: #4338ca; }
+  .cat-faith .section-icon { background: #eef2ff; }
+
+  /* ── EMPTY STATE ── */
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--ink-lt);
+    display: none;
+  }
+
+  .empty-state.visible { display: block; }
+
+  .empty-state .emoji { font-size: 3rem; margin-bottom: 14px; }
+
+  .empty-state p { font-size: 1rem; }
+
+  /* ── 211 CALLOUT ── */
+  .resource-211 {
+    background: var(--forest);
+    color: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 28px 32px;
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .resource-211 .big-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--amber-lt);
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .resource-211 h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+
+  .resource-211 p {
+    font-size: .9rem;
+    color: rgba(255,255,255,.78);
+    max-width: 520px;
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--forest);
+    color: rgba(255,255,255,.65);
+    text-align: center;
+    padding: 40px 24px;
+    font-size: .83rem;
+    line-height: 1.8;
+  }
+
+  footer strong { color: rgba(255,255,255,.9); }
+
+  footer a { color: var(--sage-lt); text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+
+  /* ── SKIP LINK ── */
+  .skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--amber);
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 999;
+    border-radius: 0 0 8px 0;
+    font-weight: 600;
+    transition: top .2s;
+  }
+
+  .skip-link:focus { top: 0; }
+
+  /* ── SCROLL TO TOP ── */
+  #scrollTop {
+    position: fixed;
+    bottom: 28px;
+    right: 24px;
+    background: var(--forest);
+    color: var(--white);
+    border: none;
+    border-radius: 50%;
+    width: 44px; height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: var(--shadow-md);
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .25s, transform .25s;
+    z-index: 90;
+  }
+
+  #scrollTop.visible { opacity: 1; transform: translateY(0); }
+  #scrollTop:hover { background: var(--moss); }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 680px) {
+    .hero { padding: 52px 18px 44px; }
+    .resource-211 { flex-direction: column; gap: 12px; text-align: center; }
+    .resource-211 .big-number { font-size: 2.6rem; }
+    .controls-inner { gap: 10px; }
+    .card-grid { grid-template-columns: 1fr; }
+    .section-count { display: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { transition: none !important; animation: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ── HERO ── -->
+<header class="hero">
+  <div class="hero-badge">Lane County, Oregon</div>
+  <h1>Eugene &amp; Springfield<br><span>Community Resource Directory</span></h1>
+  <p class="hero-sub">A free, open directory of verified services, nonprofits, and organizations serving our community.</p>
+  <div class="hero-stats">
+    <span class="stat-pill"><strong>110+</strong> Organizations</span>
+    <span class="stat-pill"><strong>17</strong> Categories</span>
+    <span class="stat-pill"><strong>Free</strong> to Use</span>
+    <span class="stat-pill">Updated <strong>2025</strong></span>
+  </div>
+</header>
+
+<!-- ── EMERGENCY BAR ── -->
+<div class="emergency-bar" role="alert">
+  <strong>🆘 Crisis Lines:</strong>
+  <a href="tel:988">988</a> Suicide &amp; Crisis Lifeline
+  <span class="divider">|</span>
+  <a href="tel:211">211</a> Community Resources
+  <span class="divider">|</span>
+  <a href="tel:5416821001">541-682-1001</a> Lane County Behavioral Health (24/7)
+  <span class="divider">|</span>
+  <a href="tel:911">911</a> Emergency
+</div>
+
+<!-- ── CONTROLS ── -->
+<nav class="controls" aria-label="Category filter and search">
+  <div class="controls-inner">
+    <div class="search-wrap">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="searchInput" type="search" placeholder="Search organizations, services…" aria-label="Search organizations">
+    </div>
+    <div class="filter-scroll" role="group" aria-label="Filter by category">
+      <button class="filter-btn active" data-cat="all">All</button>
+      <button class="filter-btn" data-cat="crisis">Crisis</button>
+      <button class="filter-btn" data-cat="housing">Housing</button>
+      <button class="filter-btn" data-cat="food">Food</button>
+      <button class="filter-btn" data-cat="health">Health</button>
+      <button class="filter-btn" data-cat="youth">Youth &amp; Families</button>
+      <button class="filter-btn" data-cat="seniors">Seniors</button>
+      <button class="filter-btn" data-cat="disability">Disability</button>
+      <button class="filter-btn" data-cat="lgbtq">LGBTQ+</button>
+      <button class="filter-btn" data-cat="legal">Legal &amp; Advocacy</button>
+      <button class="filter-btn" data-cat="employment">Employment</button>
+      <button class="filter-btn" data-cat="multicultural">Multicultural</button>
+      <button class="filter-btn" data-cat="education">Education</button>
+      <button class="filter-btn" data-cat="environment">Environment</button>
+      <button class="filter-btn" data-cat="arts">Arts</button>
+      <button class="filter-btn" data-cat="veterans">Veterans</button>
+      <button class="filter-btn" data-cat="faith">Faith-Based</button>
+      <button class="filter-btn" data-cat="animals">Animals</button>
+    </div>
+    <span class="results-count" id="resultsCount" aria-live="polite"></span>
+  </div>
+</nav>
+
+<!-- ── MAIN CONTENT ── -->
+<main class="main" id="main-content">
+
+  <!-- 211 CALLOUT -->
+  <div class="resource-211">
+    <div class="big-number">211</div>
+    <div>
+      <h3>Not sure where to start? Call or text 211</h3>
+      <p>211info connects Lane County residents to health, human, and social services 24 hours a day. Free, confidential, multilingual. You can also visit <strong>211info.org</strong> to search online.</p>
+    </div>
+  </div>
+
+  <div class="empty-state" id="emptyState">
+    <div class="emoji">🔍</div>
+    <p>No organizations found matching your search.<br>Try different keywords or clear your filter.</p>
+  </div>
+
+  <!-- ════════════════════════════════ CRISIS ════════════════════════════════ -->
+  <section class="category-section cat-crisis" data-cat="crisis" id="sec-crisis">
+    <div class="section-header">
+      <div class="section-icon">🆘</div>
+      <div>
+        <div class="section-title">Crisis &amp; Emergency</div>
+        <div class="section-desc">Immediate help for mental health crises, domestic violence, and urgent needs</div>
+      </div>
+      <span class="section-count">8 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-crisis" data-cat="crisis" data-search="crisis lane county behavioral health 24/7 mental health substance">
+        <div class="org-name">Lane County Behavioral Health Crisis Line</div>
+        <div class="org-tags"><span class="tag urgent">24/7</span><span class="tag free">Free</span></div>
+        <p class="org-desc">Around-the-clock crisis intervention for mental health emergencies, suicidal ideation, and substance use crises serving all of Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416821001" class="phone-link">541-682-1001</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg><span>Also reachable via Oregon 988 line</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-crisis" data-cat="crisis" data-search="988 suicide crisis lifeline national 24/7">
+        <div class="org-name">Oregon 988 Suicide &amp; Crisis Lifeline</div>
+        <div class="org-tags"><span class="tag urgent">24/7</span><span class="tag free">Free</span></div>
+        <p class="org-desc">Dial or text <strong>988</strong> for immediate support during any mental health, suicidal, or substance use crisis. Available in Spanish and for Deaf/hard-of-hearing communities.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:988" class="phone-link">988 (call or text)</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://988lifeline.org" target="_blank" rel="noopener">988lifeline.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-crisis" data-cat="crisis" data-search="white bird clinic cahoots mobile crisis response mental health street">
+        <div class="org-name">White Bird Clinic / CAHOOTS</div>
+        <div class="org-tags"><span class="tag urgent">Crisis Response</span></div>
+        <p class="org-desc">White Bird Clinic provides walk-in mental health, crisis counseling, and medical services. CAHOOTS (Crisis Assistance Helping Out On The Streets) was a nationally recognized mobile crisis model — check current status. White Bird remains a primary mental health resource.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416872366" class="phone-link">541-687-2366 (crisis)</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://whitebirdclinic.org" target="_blank" rel="noopener">whitebirdclinic.org</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>341 E 12th Ave, Eugene</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-crisis" data-cat="crisis" data-search="womenspace domestic violence shelter lane county">
+        <div class="org-name">Womenspace</div>
+        <div class="org-tags"><span class="tag urgent">DV Support</span><span class="tag free">Confidential</span></div>
+        <p class="org-desc">Prevents domestic violence in intimate partner relationships in Lane County and supports survivors in claiming personal power. Offers shelter, legal advocacy, counseling, and support groups.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413433223" class="phone-link">541-343-3223 (hotline)</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://womenspace.org" target="_blank" rel="noopener">womenspace.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-crisis" data-cat="crisis" data-search="youth crisis response program children teens parents 24/7">
+        <div class="org-name">Lane County Youth Crisis Response</div>
+        <div class="org-tags"><span class="tag urgent">Youth</span><span class="tag free">Free</span></div>
+        <p class="org-desc">For parents or caregivers of children up to age 17 experiencing a behavioral health or mental health crisis. Connects families to immediate mobile response and follow-up services.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:18889899990" class="phone-link">1-888-989-9990</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-crisis" data-cat="crisis" data-search="trauma intervention program TIP volunteers emotional first aid tragedy">
+        <div class="org-name">Trauma Intervention Program of Lane County (TIP)</div>
+        <div class="org-tags"><span class="tag">Volunteer</span></div>
+        <p class="org-desc">Specially trained volunteers provide emotional first aid and practical support to survivors of traumatic events and their families in the first hours after a tragedy. Dispatched through emergency services.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5412866416" class="phone-link">541-286-6416</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://tiplancecounty.org" target="_blank" rel="noopener">TIPLaneCounty.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-crisis" data-cat="crisis" data-search="kids first children advocacy center crime abuse intervention">
+        <div class="org-name">Kids FIRST</div>
+        <div class="org-tags"><span class="tag">Children</span><span class="tag">Advocacy</span></div>
+        <p class="org-desc">Lane County's children's advocacy center providing essential intervention and advocacy services for children impacted by crime. Forensic interviews, trauma-informed care, and coordination with law enforcement and child welfare.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Eugene, OR</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-crisis" data-cat="crisis" data-search="ann's heart women shelter springfield unhoused women">
+        <div class="org-name">Ann's Heart Women's Shelter</div>
+        <div class="org-tags"><span class="tag urgent">Shelter</span></div>
+        <p class="org-desc">Grassroots Springfield organization providing stable housing for unhoused women. Staff work one-on-one with guests to provide resources for transitioning to permanent housing.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5418979764" class="phone-link">541-897-9764</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://annsheartWomensshelter.org" target="_blank" rel="noopener">AnnsHeartWomensShelter.org</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>PO Box 499, Springfield, OR 97477</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ HOUSING ════════════════════════════════ -->
+  <section class="category-section cat-housing" data-cat="housing" id="sec-housing">
+    <div class="section-header">
+      <div class="section-icon">🏠</div>
+      <div>
+        <div class="section-title">Housing &amp; Homelessness</div>
+        <div class="section-desc">Shelters, transitional housing, rental assistance, and affordable housing</div>
+      </div>
+      <span class="section-count">11 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="st vincent de paul svdp housing food employment clothing emergency eugene">
+        <div class="org-name">St. Vincent de Paul Society of Lane County</div>
+        <div class="org-tags"><span class="tag">Housing</span><span class="tag">Emergency Services</span></div>
+        <p class="org-desc">One of Lane County's largest social service providers. Operates emergency shelters (Dawn to Dawn, Egan Warming Centers), overnight parking, the Eugene Service Station, safe camping programs, food assistance, clothing vouchers, and rental assistance.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416864600" class="phone-link">541-686-4600</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://www.svdp.us" target="_blank" rel="noopener">svdp.us</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="eugene mission shelter recovery meals laundry women children addiction">
+        <div class="org-name">Eugene Mission</div>
+        <div class="org-tags"><span class="tag">Shelter</span><span class="tag">Recovery</span></div>
+        <p class="org-desc">Provides emergency housing, meals, laundry, and other services for homeless individuals and families in Eugene. Also offers addiction recovery, job training, and a separate Center for Women and Children.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413443251" class="phone-link">541-344-3251</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://eugenemission.org" target="_blank" rel="noopener">eugenemission.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="homes for good affordable housing low income public housing lane county">
+        <div class="org-name">Homes for Good</div>
+        <div class="org-tags"><span class="tag">Affordable Housing</span><span class="tag">Section 8</span></div>
+        <p class="org-desc">Lane County's public housing authority. Provides affordable housing, administers Section 8 housing choice vouchers, and develops new affordable housing projects for low-income residents throughout Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416822483" class="phone-link">541-682-2483</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://www.homesforgood.org" target="_blank" rel="noopener">homesforgood.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="sheltercare transitional housing mental illness birch program">
+        <div class="org-name">ShelterCare</div>
+        <div class="org-tags"><span class="tag">Transitional Housing</span><span class="tag">Mental Health</span></div>
+        <p class="org-desc">Provides transitional and permanent supportive housing for individuals with mental illness or those recently released from incarceration. The Birch program offers a 6-month transition period for stable living.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413421152" class="phone-link">541-342-1152</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://sheltercare.org" target="_blank" rel="noopener">sheltercare.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="community supported shelters CSS safe spot tiny homes camping houseless">
+        <div class="org-name">Community Supported Shelters (CSS)</div>
+        <div class="org-tags"><span class="tag">Safe Camping</span><span class="tag">Tiny Homes</span></div>
+        <p class="org-desc">Manages Safe Spot Communities — safe, legal spaces for people experiencing homelessness. Operates employment support, healthcare connections, and recovery services that restore dignity and stability.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://communitysupportedshelters.org" target="_blank" rel="noopener">communitysupportedshelters.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="sponsors inc reentry conviction housing job community">
+        <div class="org-name">Sponsors, Inc.</div>
+        <div class="org-tags"><span class="tag">Re-entry</span><span class="tag">Housing</span></div>
+        <p class="org-desc">From day one, helps people with conviction histories find housing, employment, and community to create more hopeful futures. A proven and cost-effective alternative to incarceration.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5414858341" class="phone-link">541-485-8341</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://sponsorsinc.org" target="_blank" rel="noopener">SponsorsInc.org</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>338 Hwy 99, Eugene</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="springfield eugene tenant association hotline rental rights eviction">
+        <div class="org-name">Springfield-Eugene Tenant Association</div>
+        <div class="org-tags"><span class="tag">Tenant Rights</span></div>
+        <p class="org-desc">Provides resources and advocacy for tenants facing eviction, unsafe conditions, or housing instability. Operates a tenant rights hotline and offers guidance on Oregon landlord-tenant law.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5419723715" class="phone-link">541-972-3715</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://springfieldeugenetenantassociation.com" target="_blank" rel="noopener">springfieldeugenetenantassociation.com</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="15th night community youth shelter runaway homeless teens 11-20">
+        <div class="org-name">15th Night</div>
+        <div class="org-tags"><span class="tag">Youth Homelessness</span></div>
+        <p class="org-desc">Community effort to end youth homelessness in Lane County. Coordinates across organizations to identify beds available right now and connect youth to shelter and services before chronic homelessness sets in.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://15thnight.org" target="_blank" rel="noopener">15thnight.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="looking glass station 7 youth shelter runaway homeless teens counseling">
+        <div class="org-name">Looking Glass Community Services — Station #7</div>
+        <div class="org-tags"><span class="tag">Youth Shelter</span></div>
+        <p class="org-desc">Emergency shelter for runaway and homeless youth ages 11–20. Provides meals, showers, laundry, clothing, hygiene items, counseling, education support, and job training services.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416893111" class="phone-link">541-689-3111</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://lookingglass.us" target="_blank" rel="noopener">lookingglass.us</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>931 W 7th Ave, Eugene</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="catholic community services CCS oasis conestoga huts families children springfield">
+        <div class="org-name">Catholic Community Services of Lane County</div>
+        <div class="org-tags"><span class="tag">Housing</span><span class="tag">Emergency Aid</span></div>
+        <p class="org-desc">Provides food boxes, rent assistance, emergency motel vouchers for families, the OASIS program (Conestoga Huts and tiny homes for families with children in Springfield), and case management.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413453628" class="phone-link">541-345-3628</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://ccslc.org" target="_blank" rel="noopener">ccslc.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-housing" data-cat="housing" data-search="egan warming center cold weather shelter volunteers winter pets">
+        <div class="org-name">Egan Warming Centers</div>
+        <div class="org-tags"><span class="tag">Seasonal Shelter</span><span class="tag">Pets Welcome</span></div>
+        <p class="org-desc">Opens emergency warming shelters across Eugene and Springfield when temperatures drop below 30°F. Run predominantly by volunteers; provides dinner, breakfast, and sleeping space. Pets always welcome. Text "Join" to 541-730-3071 for alerts.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://www.svdp.us/services/shelter-assistance/egan-warming-centers/" target="_blank" rel="noopener">svdp.us — Egan Warming Centers</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ FOOD ════════════════════════════════ -->
+  <section class="category-section cat-food" data-cat="food" id="sec-food">
+    <div class="section-header">
+      <div class="section-icon">🍎</div>
+      <div>
+        <div class="section-title">Food &amp; Nutrition</div>
+        <div class="section-desc">Food banks, meal programs, free pantries, and hunger relief</div>
+      </div>
+      <span class="section-count">8 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-food" data-cat="food" data-search="food for lane county food bank hunger emergency pantry distribution">
+        <div class="org-name">Food for Lane County</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag">Food Bank</span></div>
+        <p class="org-desc">Lane County's primary food bank. Provides emergency and non-emergency food assistance throughout the county, operating a network of food pantries, mobile pantries, and partner agencies to alleviate hunger.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413434359" class="phone-link">541-343-4359</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://foodforlanecounty.org" target="_blank" rel="noopener">foodforlanecounty.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-food" data-cat="food" data-search="burrito brigade vegan meals delivery volunteers eugene springfield lane county">
+        <div class="org-name">Burrito Brigade</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag">Vegan</span><span class="tag">Volunteer</span></div>
+        <p class="org-desc">Delivers 300,000+ vegan meals a year to hungry individuals in Eugene and Springfield by foot, bike, and car. Weekend volunteers gather at local churches to prepare and distribute burritos. Also operates the Little Free Pantries network.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://burritobrigade.org" target="_blank" rel="noopener">burritobrigade.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-food" data-cat="food" data-search="little free pantries 24/7 neighborhoods nonperishable hygiene veneta junction city">
+        <div class="org-name">Little Free Pantries</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag urgent">24/7</span></div>
+        <p class="org-desc">Over 50 community pantries located in neighborhoods across Eugene, Springfield, Veneta, Junction City, and Florence. Stocked weekly with nonperishable food, beverages, and hygiene products. Available at any hour.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://burritobrigade.org/pantries/" target="_blank" rel="noopener">burritobrigade.org/pantries</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-food" data-cat="food" data-search="community fridges free food 16th 24th grant alder bus">
+        <div class="org-name">Community Fridges Eugene</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag urgent">24/7</span></div>
+        <p class="org-desc">Community-stocked refrigerators offering free food around the clock. Multiple locations including: 870 W. 16th Ave, 53 W. 24th Place, 2116 Grant St, and 1790 Alder St — all accessible by LTD bus.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Multiple locations — see Eugene community boards</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-food" data-cat="food" data-search="salvation army food clothing rent eugene springfield assistance">
+        <div class="org-name">The Salvation Army — Eugene &amp; Springfield</div>
+        <div class="org-tags"><span class="tag">Food</span><span class="tag">Emergency Aid</span></div>
+        <p class="org-desc">Provides food assistance (assigned through Food for Lane County network), clothing vouchers, and one-time rent assistance when funds are available. Two service centers: Eugene (640 W 7th Ave) and Springfield (1275 Mill St).</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413433328" class="phone-link">541-343-3328 (Eugene)</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5417476229" class="phone-link">541-747-6229 (Springfield)</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-food" data-cat="food" data-search="lane county diaper bank diapers families infants low income">
+        <div class="org-name">Lane County Diaper Bank</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag">Families</span></div>
+        <p class="org-desc">Provides free diapers to families in Lane County who cannot afford them, so parents don't have to choose between paying rent and buying diapers. Serves hundreds of families monthly.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5412210824" class="phone-link">541-221-0824</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://lcdiaperbank.org" target="_blank" rel="noopener">LCDiaperBank.org</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>4107 Industrial Ave, Warehouse 2, Springfield</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-food" data-cat="food" data-search="huerto de la familia food security agriculture entrepreneurship latino lane county">
+        <div class="org-name">Huerto de la Familia</div>
+        <div class="org-tags"><span class="tag">Food Security</span><span class="tag">Latino Community</span></div>
+        <p class="org-desc">Increases food security and economic empowerment by providing resources in agriculture and entrepreneurship to Lane County Latinos. Operates community gardens and entrepreneurship training for families with great potential but limited access.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://huertofamilia.org" target="_blank" rel="noopener">huertofamilia.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-food" data-cat="food" data-search="acorn cafe pay it forward free meals vegan eugene restaurant">
+        <div class="org-name">Acorn Café</div>
+        <div class="org-tags"><span class="tag">Pay-It-Forward</span><span class="tag">Vegan</span></div>
+        <p class="org-desc">Vegan café and community resource in Eugene. Features a pay-it-forward board with free meals pre-purchased by fellow patrons for anyone in need. No questions asked.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://eatacorncafe.com" target="_blank" rel="noopener">eatacorncafe.com</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>796 Monroe St, Eugene</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ HEALTH ════════════════════════════════ -->
+  <section class="category-section cat-health" data-cat="health" id="sec-health">
+    <div class="section-header">
+      <div class="section-icon">🏥</div>
+      <div>
+        <div class="section-title">Health &amp; Mental Health</div>
+        <div class="section-desc">Medical care, behavioral health, addiction recovery, and HIV/STI services</div>
+      </div>
+      <span class="section-count">10 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-health" data-cat="health" data-search="peacehealth sacred heart hospital emergency trauma eugene">
+        <div class="org-name">PeaceHealth Sacred Heart Medical Center</div>
+        <div class="org-tags"><span class="tag">Hospital</span><span class="tag urgent">Emergency Care</span></div>
+        <p class="org-desc">The primary hospital system serving Lane County, with locations in Eugene (RiverBend and University District). Offers emergency care, trauma services, specialty medicine, and community health programs.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416861111" class="phone-link">541-686-1111</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://www.peacehealth.org" target="_blank" rel="noopener">peacehealth.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-health" data-cat="health" data-search="lane county public health immunizations STI testing clinics community">
+        <div class="org-name">Lane County Public Health</div>
+        <div class="org-tags"><span class="tag">Public Health</span><span class="tag free">Low-Cost</span></div>
+        <p class="org-desc">County public health services including immunizations, STI testing and treatment, family planning, WIC, environmental health, communicable disease investigation, and community health programs.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416823433" class="phone-link">541-682-3433</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://lanecountyor.gov/public-health" target="_blank" rel="noopener">lanecountyor.gov</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-health" data-cat="health" data-search="hiv alliance testing prevention education needle exchange hepatitis C">
+        <div class="org-name">HIV Alliance</div>
+        <div class="org-tags"><span class="tag free">Free Testing</span><span class="tag">Harm Reduction</span></div>
+        <p class="org-desc">Formed in Eugene in 1994 to support individuals living with HIV/AIDS and prevent new infections. Offers free and confidential HIV, Hepatitis C, and STI testing, needle exchange, behavioral health services, and community education.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://hivalliance.org" target="_blank" rel="noopener">hivalliance.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-health" data-cat="health" data-search="willamette family addiction recovery substance use counseling treatment">
+        <div class="org-name">Willamette Family</div>
+        <div class="org-tags"><span class="tag">Addiction Recovery</span><span class="tag">Mental Health</span></div>
+        <p class="org-desc">Lane County's largest addiction and mental health treatment organization. Provides outpatient and residential substance use treatment, mental health counseling, family services, and housing support for people in recovery.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413434277" class="phone-link">541-343-4277</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://wfts.org" target="_blank" rel="noopener">wfts.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-health" data-cat="health" data-search="serenity lane alcohol drug treatment recovery outpatient">
+        <div class="org-name">Serenity Lane</div>
+        <div class="org-tags"><span class="tag">Addiction Recovery</span></div>
+        <p class="org-desc">Provides a healing environment for chemically dependent individuals and their families to discover enhanced quality of life through long-term recovery. Offers outpatient treatment for addiction, mental health, and problem gambling including individual, family, and group therapy.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5414857870" class="phone-link">541-485-7870</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://serenitylane.org" target="_blank" rel="noopener">serenitylane.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-health" data-cat="health" data-search="options counseling family services mental health children families oregon">
+        <div class="org-name">Options Counseling and Family Services</div>
+        <div class="org-tags"><span class="tag">Mental Health</span><span class="tag">Family Services</span></div>
+        <p class="org-desc">Provides quality, cost-effective mental health and family preservation services to children and families of Oregon since 1991. Services include in-home counseling, crisis intervention, and intensive family support.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://options.org" target="_blank" rel="noopener">options.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-health" data-cat="health" data-search="transition health trans queer transgender gender affirming healthcare">
+        <div class="org-name">Transition Health</div>
+        <div class="org-tags"><span class="tag">Trans Healthcare</span><span class="tag">LGBTQ+</span></div>
+        <p class="org-desc">Provides compassionate, evidence-based healthcare and education for trans and queer communities. Committed to advocacy and accessible services; a leader in inclusive, affirming, patient-centered care in Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413577594" class="phone-link">541-357-7594</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://transition.health" target="_blank" rel="noopener">transition.health</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1590 Willamette St, Eugene</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-health" data-cat="health" data-search="planned parenthood reproductive health family planning contraception STI">
+        <div class="org-name">Planned Parenthood — SW Oregon</div>
+        <div class="org-tags"><span class="tag">Reproductive Health</span></div>
+        <p class="org-desc">Provides reproductive health services including family planning, contraception, STI testing and treatment, cancer screenings, and education. Sliding-scale fees available; no one turned away for inability to pay.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413444696" class="phone-link">541-344-4696</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://www.plannedparenthood.org/health-center/oregon/eugene" target="_blank" rel="noopener">plannedparenthood.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-health" data-cat="health" data-search="trauma healing project PTSD therapy counseling survivors">
+        <div class="org-name">Trauma Healing Project</div>
+        <div class="org-tags"><span class="tag">Trauma</span><span class="tag">Counseling</span></div>
+        <p class="org-desc">Delivers healing and hope to traumatized children and their families, and enhances the physical, emotional, and spiritual health of its clients. Offers trauma-informed therapy and body-based healing modalities.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://traumahealingproject.org" target="_blank" rel="noopener">traumahealingproject.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-health" data-cat="health" data-search="laurel hill center psychiatric disability self-reliance community living">
+        <div class="org-name">Laurel Hill Center</div>
+        <div class="org-tags"><span class="tag">Mental Health</span><span class="tag">Disability</span></div>
+        <p class="org-desc">Committed to helping people with psychiatric disabilities make choices and acquire skills that increase self-reliance and the ability to live and work in the community. Offers vocational and psychosocial rehabilitation.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413432611" class="phone-link">541-343-2611</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://laurelhill.org" target="_blank" rel="noopener">laurelhill.org</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ YOUTH ════════════════════════════════ -->
+  <section class="category-section cat-youth" data-cat="youth" id="sec-youth">
+    <div class="section-header">
+      <div class="section-icon">👨‍👩‍👧</div>
+      <div>
+        <div class="section-title">Children, Youth &amp; Families</div>
+        <div class="section-desc">Early childhood, parenting support, after-school programs, and youth development</div>
+      </div>
+      <span class="section-count">9 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-youth" data-cat="youth" data-search="head start early childhood education low-income preschool federally funded">
+        <div class="org-name">Head Start of Lane County</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag">Early Childhood</span></div>
+        <p class="org-desc">Promotes school readiness for low-income children through federally funded Early Head Start and Head Start programs. Provides early education, health screenings, nutrition, and family support services.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5414654800" class="phone-link">541-465-4800</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://headstartlc.org" target="_blank" rel="noopener">headstartlc.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-youth" data-cat="youth" data-search="relief nursery family support abuse prevention early childhood trauma">
+        <div class="org-name">Relief Nursery</div>
+        <div class="org-tags"><span class="tag">Family Support</span><span class="tag">Prevention</span></div>
+        <p class="org-desc">Provides family support services to prevent child abuse and neglect. Serves families with young children at risk for abuse, offering therapeutic childcare, home visits, parent education, and crisis support.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416876108" class="phone-link">541-687-6108</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://reliefnursery.org" target="_blank" rel="noopener">reliefnursery.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-youth" data-cat="youth" data-search="looking glass community services youth counseling residential treatment vocation">
+        <div class="org-name">Looking Glass Community Services</div>
+        <div class="org-tags"><span class="tag">Youth Services</span><span class="tag">Counseling</span></div>
+        <p class="org-desc">Provides counseling, residential treatment, education and vocational training, shelter, and case management to at-risk children, youth, and adults in Lane County. A cornerstone of Lane County youth services since 1970.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416896111" class="phone-link">541-689-6111</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://lookingglass.us" target="_blank" rel="noopener">lookingglass.us</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-youth" data-cat="youth" data-search="friends of the children long-term mentoring youth poverty lane county">
+        <div class="org-name">Friends of the Children — Lane County</div>
+        <div class="org-tags"><span class="tag">Mentoring</span><span class="tag">Long-Term</span></div>
+        <p class="org-desc">Provides long-term, paid professional mentors to children facing the greatest obstacles — beginning in kindergarten through high school graduation. Commits to each child regardless of circumstance.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://friendsofthechildren.org/lane-county" target="_blank" rel="noopener">friendsofthechildren.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-youth" data-cat="youth" data-search="YMCA youth development after school summer camp health wellness">
+        <div class="org-name">Eugene Family YMCA</div>
+        <div class="org-tags"><span class="tag">Youth</span><span class="tag">Wellness</span></div>
+        <p class="org-desc">Fosters community through diverse programs focused on youth development, health, and social responsibility. Operates after-school care for ages 4–12 across 12 schools, summer programs, fitness, and aquatics. Scholarships available.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413454957" class="phone-link">541-345-4957</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://eugeneymca.org" target="_blank" rel="noopener">eugeneymca.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-youth" data-cat="youth" data-search="parenting now education support families parent skills">
+        <div class="org-name">ParentingNow</div>
+        <div class="org-tags"><span class="tag">Parenting</span><span class="tag">Education</span></div>
+        <p class="org-desc">Provides parenting education and support to strengthen families and nurture child development. Offers free classes, workshops, and resources for parents and caregivers of young children across Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://parentingnow.org" target="_blank" rel="noopener">parentingnow.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-youth" data-cat="youth" data-search="CORE community outreach empowerment young people homelessness poverty youth">
+        <div class="org-name">CORE (Community Outreach Through Radical Empowerment)</div>
+        <div class="org-tags"><span class="tag">Youth Outreach</span></div>
+        <p class="org-desc">Supports, empowers, and advocates for young people in Lane County surviving the effects of poverty, homelessness, or other adversities. Provides drop-in services, outreach, and peer support.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Eugene, OR</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-youth" data-cat="youth" data-search="daisy chain doula lactation pregnancy birth parenting resources">
+        <div class="org-name">Daisy C.H.A.I.N.</div>
+        <div class="org-tags"><span class="tag">Birth Support</span><span class="tag">Lactation</span></div>
+        <p class="org-desc">A leader in the community for doula, lactation, pregnancy, birthing, and parenting resources. Provides education, support groups, and connects families to trained birth and postpartum support professionals.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Eugene, OR</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-youth" data-cat="youth" data-search="arc lane county developmental disabilities children intensive in-home services dignity">
+        <div class="org-name">Arc of Lane County</div>
+        <div class="org-tags"><span class="tag">Developmental Disabilities</span><span class="tag">Advocacy</span></div>
+        <p class="org-desc">Advocates for individuals with developmental disabilities, providing children's intensive in-home services to enhance dignity and expand opportunities. Supports families navigating the disability service system.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413431225" class="phone-link">541-343-1225</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://arclc.org" target="_blank" rel="noopener">arclc.org</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ SENIORS ════════════════════════════════ -->
+  <section class="category-section cat-seniors" data-cat="seniors" id="sec-seniors">
+    <div class="section-header">
+      <div class="section-icon">🌿</div>
+      <div>
+        <div class="section-title">Seniors &amp; Older Adults</div>
+        <div class="section-desc">Transportation, meals, in-home support, and aging services</div>
+      </div>
+      <span class="section-count">4 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-seniors" data-cat="seniors" data-search="senior disabled services lane council of governments LCOG transportation meals">
+        <div class="org-name">Senior &amp; Disability Services (Lane Council of Governments)</div>
+        <div class="org-tags"><span class="tag">In-Home Support</span><span class="tag">Meals</span></div>
+        <p class="org-desc">Provides a full range of services to help older adults and people with disabilities live independently, including in-home care, Meals on Wheels, caregiver support, and connection to community resources throughout Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416825560" class="phone-link">541-682-5560</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://www.lcog.org/sds" target="_blank" rel="noopener">lcog.org/sds</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-seniors" data-cat="seniors" data-search="aging disability resource connection ADRC oregon services navigation">
+        <div class="org-name">Aging and Disability Resource Connection of Oregon (ADRC)</div>
+        <div class="org-tags"><span class="tag">Navigation</span><span class="tag">Seniors</span><span class="tag">Disability</span></div>
+        <p class="org-desc">Statewide "no wrong door" system helping older adults and people with disabilities navigate long-term services and supports. Provides information, referrals, and assistance choosing between community and facility-based care.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:18005251494" class="phone-link">1-800-525-1494</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://adrcoforegon.org" target="_blank" rel="noopener">adrcoforegon.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-seniors" data-cat="seniors" data-search="ridesource LTD paratransit ADA disability transportation bus">
+        <div class="org-name">RideSource / LTD Point2Point</div>
+        <div class="org-tags"><span class="tag">Transportation</span><span class="tag">ADA</span></div>
+        <p class="org-desc">Origin-to-destination ADA paratransit service for people unable to use the fixed-route bus due to a disability. Operates within the Eugene/Springfield metropolitan area. LTD Point2Point also provides county-wide accessible transit connections.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416825000" class="phone-link">541-682-5000</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://www.ltd.org" target="_blank" rel="noopener">ltd.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-seniors" data-cat="seniors" data-search="oregon supported living program OSLP adults developmental disabilities community">
+        <div class="org-name">Oregon Supported Living Program (OSLP)</div>
+        <div class="org-tags"><span class="tag">Developmental Disabilities</span><span class="tag">Adults</span></div>
+        <p class="org-desc">Provides supported living and community integration services to adults with intellectual and developmental disabilities in Lane County. Supports individuals in living independently with personalized care plans.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413430938" class="phone-link">541-343-0938</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://oslp.org" target="_blank" rel="noopener">oslp.org</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ DISABILITY ════════════════════════════════ -->
+  <section class="category-section cat-disability" data-cat="disability" id="sec-disability">
+    <div class="section-header">
+      <div class="section-icon">♿</div>
+      <div>
+        <div class="section-title">Disability Services</div>
+        <div class="section-desc">Support, advocacy, and services for people with disabilities</div>
+      </div>
+      <span class="section-count">4 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-disability" data-cat="disability" data-search="pearl buck center intellectual developmental disabilities children adults">
+        <div class="org-name">Pearl Buck Center</div>
+        <div class="org-tags"><span class="tag">Intellectual Disabilities</span><span class="tag">Employment</span></div>
+        <p class="org-desc">Supports children and adults with intellectual and developmental disabilities. Provides early intervention, employment services, day programs, and residential support to help individuals live meaningful lives.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413438336" class="phone-link">541-343-8336</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://pearlbuckcenter.com" target="_blank" rel="noopener">pearlbuckcenter.com</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-disability" data-cat="disability" data-search="full access independent living equal access community inclusion">
+        <div class="org-name">Full Access</div>
+        <div class="org-tags"><span class="tag">Independent Living</span><span class="tag">Advocacy</span></div>
+        <p class="org-desc">Envisions a world where equal access ensures all people live, work, and recreate in their community consistent with their preferences and choices. Provides independent living services, advocacy, and peer support for people with disabilities.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413438595" class="phone-link">541-343-8595</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://fullaccess.org" target="_blank" rel="noopener">fullaccess.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-disability" data-cat="disability" data-search="alvord-taylor brain injury developmental disability services lane county">
+        <div class="org-name">Alvord-Taylor</div>
+        <div class="org-tags"><span class="tag">Brain Injury</span><span class="tag">Developmental Disabilities</span></div>
+        <p class="org-desc">Provides comprehensive supports and services for individuals with brain injuries and developmental disabilities throughout Lane County. Focus on community integration, employment, and quality residential services.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413439600" class="phone-link">541-343-9600</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://alvordtaylor.org" target="_blank" rel="noopener">alvordtaylor.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-disability" data-cat="disability" data-search="direction service counseling children youth families mental health disability">
+        <div class="org-name">Direction Service</div>
+        <div class="org-tags"><span class="tag">Mental Health</span><span class="tag">Developmental Disabilities</span></div>
+        <p class="org-desc">The Direction Service Counseling Center provides a full range of mental health services to very young children, children, adolescents, families, and adults. Also provides coordination for developmental disability services.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413438595" class="phone-link">541-343-8595</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://directionservice.org" target="_blank" rel="noopener">directionservice.org</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ LGBTQ+ ════════════════════════════════ -->
+  <section class="category-section cat-lgbtq" data-cat="lgbtq" id="sec-lgbtq">
+    <div class="section-header">
+      <div class="section-icon">🏳️‍🌈</div>
+      <div>
+        <div class="section-title">LGBTQ+ Resources</div>
+        <div class="section-desc">Affirming services, community spaces, advocacy, and support for LGBTQ+ residents</div>
+      </div>
+      <span class="section-count">6 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-lgbtq" data-cat="lgbtq" data-search="transponder transgender non-binary gender diverse nonprofit support education eugene">
+        <div class="org-name">TransPonder</div>
+        <div class="org-tags"><span class="tag">Trans-Led</span><span class="tag">Support</span></div>
+        <p class="org-desc">A transgender founded and led nonprofit in Eugene providing support, resources, and education for the trans/gender-diverse community and allies. Offers support groups, resource navigation, training, and community events.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://transponder.community" target="_blank" rel="noopener">transponder.community</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-lgbtq" data-cat="lgbtq" data-search="spectrum lgbtq venue community space events drag shows concerts workshops eugene">
+        <div class="org-name">Spectrum Eugene</div>
+        <div class="org-tags"><span class="tag">Community Space</span><span class="tag">All Ages</span></div>
+        <p class="org-desc">A venue, restaurant, and hangout spot for the LGBTQIA+ community. Offers accessible space for working, eating, celebrating art, and community building. Hosts all-ages events, punk concerts, variety shows, open mics, educational workshops, and 21+ drag shows and dance parties.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://spectrumeugene.com" target="_blank" rel="noopener">spectrumeugene.com</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-lgbtq" data-cat="lgbtq" data-search="queer eugene organizing support resources community oregon">
+        <div class="org-name">Queer Eugene</div>
+        <div class="org-tags"><span class="tag">Advocacy</span><span class="tag">Community</span></div>
+        <p class="org-desc">Organizes support, resources, and community for queer folks in Oregon. Provides a hub for LGBTQ+ events, activism, mutual aid, and community connection in the Eugene-Springfield area.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://queereugene.org" target="_blank" rel="noopener">queereugene.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-lgbtq" data-cat="lgbtq" data-search="youth era lgbtq homeless youth services housing">
+        <div class="org-name">Youth ERA Eugene</div>
+        <div class="org-tags"><span class="tag">Youth</span><span class="tag">LGBTQ+</span></div>
+        <p class="org-desc">Provides services and support for LGBTQ+ youth, including housing assistance, case management, and community programs for young people who are homeless or at risk. Youth-run and youth-centered.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://youthera.org" target="_blank" rel="noopener">youthera.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-lgbtq" data-cat="lgbtq" data-search="eugene pride festival annual LGBTQ summer event lane events center">
+        <div class="org-name">Eugene Pride Festival</div>
+        <div class="org-tags"><span class="tag">Annual Event</span><span class="tag">Community</span></div>
+        <p class="org-desc">Annual LGBTQ+ Pride festival organized by dedicated community volunteers, celebrating and affirming LGBTQ+ lives in Lane County. Features entertainment, vendors, community organizations, and family-friendly activities.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://eugenepride.org" target="_blank" rel="noopener">eugenepride.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-lgbtq" data-cat="lgbtq" data-search="lavender network lesbian gay bisexual transgender community services">
+        <div class="org-name">The Lavender Network</div>
+        <div class="org-tags"><span class="tag">LGBTQ+</span><span class="tag">Community</span></div>
+        <p class="org-desc">Works to provide a safe space for LGBTQ+ folks and their allies, promote equity in the community, and uplift the voices of LGBTQ+ members. Provides educational opportunities and community organizing support.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Eugene, OR</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ LEGAL ════════════════════════════════ -->
+  <section class="category-section cat-legal" data-cat="legal" id="sec-legal">
+    <div class="section-header">
+      <div class="section-icon">⚖️</div>
+      <div>
+        <div class="section-title">Legal, Advocacy &amp; Civil Rights</div>
+        <div class="section-desc">Legal aid, civil liberties, social justice, and community organizing</div>
+      </div>
+      <span class="section-count">7 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-legal" data-cat="legal" data-search="civil liberties defense center CLDC legal rights environmental social justice">
+        <div class="org-name">Civil Liberties Defense Center (CLDC)</div>
+        <div class="org-tags"><span class="tag">Civil Liberties</span><span class="tag">Legal Defense</span></div>
+        <p class="org-desc">Provides legal support to activists and social justice movements. Defends civil liberties through litigation, education, and organizing support — particularly for environmental and social justice causes.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416879180" class="phone-link">541-687-9180</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://cldc.org" target="_blank" rel="noopener">CLDC.org</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1711 Willamette St, Suite 301, Eugene</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-legal" data-cat="legal" data-search="NAACP 1119 eugene springfield branch civil rights equality education voting">
+        <div class="org-name">NAACP Eugene-Springfield Branch #1119</div>
+        <div class="org-tags"><span class="tag">Civil Rights</span><span class="tag">Advocacy</span></div>
+        <p class="org-desc">Works for equality in education, economics, legal redistricting, and voting rights in Lane County. The Eugene branch was founded in 1976 and plays a leadership role both locally and statewide in civil rights advocacy.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://naacpeugene.org" target="_blank" rel="noopener">naacpeugene.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-legal" data-cat="legal" data-search="community alliance lane county CALC peace justice education 1966">
+        <div class="org-name">Community Alliance of Lane County (CALC)</div>
+        <div class="org-tags"><span class="tag">Peace &amp; Justice</span><span class="tag">Education</span></div>
+        <p class="org-desc">Working since 1966 to create a more just and peaceful community. Collaborates with organizations, institutions, and individuals to address root causes of oppression through education, activism, and cultural means.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://calclane.org" target="_blank" rel="noopener">calclane.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-legal" data-cat="legal" data-search="public defender services lane county indigent legal defense nonprofit">
+        <div class="org-name">Public Defender Services of Lane County</div>
+        <div class="org-tags"><span class="tag">Legal Defense</span><span class="tag free">Free</span></div>
+        <p class="org-desc">Provides legal defense services to indigent individuals facing criminal charges in Lane County. A nonprofit organization ensuring equal access to justice regardless of ability to pay.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416823480" class="phone-link">541-682-3480</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-legal" data-cat="legal" data-search="safer springfield social justice human rights shelter rights peaceful responses">
+        <div class="org-name">SAfER (Social Action for Equity and Rights)</div>
+        <div class="org-tags"><span class="tag">Human Rights</span><span class="tag">Springfield</span></div>
+        <p class="org-desc">A social justice group supporting human rights in Springfield. Programs include Shelter Rights, Progressive Responses (action for peaceful tomorrows), and Back to Back (Allies for Human Dignity).</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Springfield, OR</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-legal" data-cat="legal" data-search="oregon worker relief immigrant economic hardship financial assistance">
+        <div class="org-name">Oregon Worker Relief</div>
+        <div class="org-tags"><span class="tag">Immigrant Services</span><span class="tag">Financial Aid</span></div>
+        <p class="org-desc">Helps Oregonian immigrants in need experiencing economic hardship who are facing an immigration system that disadvantages them. Provides emergency financial assistance and navigates access to support services.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:18882747292" class="phone-link">1-888-274-7292</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://workerrelief.org" target="_blank" rel="noopener">workerrelief.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-legal" data-cat="legal" data-search="rural organizing project volunteer oregon groups support communities issue">
+        <div class="org-name">Rural Organizing Project</div>
+        <div class="org-tags"><span class="tag">Statewide</span><span class="tag">Community Organizing</span></div>
+        <p class="org-desc">Volunteer-run statewide organization with over 91 groups across rural Oregon. Builds communities with specific issue resources to support groups and individuals who need help. Active in Cottage Grove and throughout Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5035438417" class="phone-link">503-543-8417</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://rop.org" target="_blank" rel="noopener">rop.org</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ EMPLOYMENT ════════════════════════════════ -->
+  <section class="category-section cat-employment" data-cat="employment" id="sec-employment">
+    <div class="section-header">
+      <div class="section-icon">💼</div>
+      <div>
+        <div class="section-title">Employment &amp; Job Training</div>
+        <div class="section-desc">Workforce development, vocational training, and barriers-to-employment support</div>
+      </div>
+      <span class="section-count">3 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-employment" data-cat="employment" data-search="goodwill industries lane south coast vocational rehabilitation employment barriers">
+        <div class="org-name">Goodwill Industries of Lane &amp; South Coast Counties</div>
+        <div class="org-tags"><span class="tag">Job Training</span><span class="tag">Vocational Rehab</span></div>
+        <p class="org-desc">A mission-integrated, enterprise-funded organization providing services to individuals with barriers to employment. Offers vocational assessment, skills training, job placement support, and community employment programs across Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413436656" class="phone-link">541-343-6656</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://www.goodwill-lane.org" target="_blank" rel="noopener">goodwill-lane.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-employment" data-cat="employment" data-search="worksource oregon lane county employment job search career center unemployment">
+        <div class="org-name">WorkSource Oregon — Lane County</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag">Job Search</span></div>
+        <p class="org-desc">Oregon's primary workforce development system. Provides free employment services including job search assistance, career counseling, skills training, résumé help, and connections to education and employment programs.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416829000" class="phone-link">541-682-9000</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://worksourceoregon.org" target="_blank" rel="noopener">worksourceoregon.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-employment" data-cat="employment" data-search="northwest youth corps conservation youth corps job training outdoor">
+        <div class="org-name">Northwest Youth Corps</div>
+        <div class="org-tags"><span class="tag">Youth</span><span class="tag">Conservation Jobs</span></div>
+        <p class="org-desc">Provides youth employment and education through conservation work. Offers residential and non-residential programs for young people ages 15–25, combining environmental stewardship with workforce development and life skills.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413493356" class="phone-link">541-349-3356</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://nwyouthcorps.org" target="_blank" rel="noopener">nwyouthcorps.org</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ MULTICULTURAL ════════════════════════════════ -->
+  <section class="category-section cat-multicultural" data-cat="multicultural" id="sec-multicultural">
+    <div class="section-header">
+      <div class="section-icon">🌎</div>
+      <div>
+        <div class="section-title">Multicultural &amp; Immigrant Services</div>
+        <div class="section-desc">Language access, cultural community, and immigrant support</div>
+      </div>
+      <span class="section-count">4 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-multicultural" data-cat="multicultural" data-search="downtown languages english ESL citizenship computer literacy adult education immigrants">
+        <div class="org-name">Downtown Languages</div>
+        <div class="org-tags"><span class="tag">ESL</span><span class="tag">Immigrant Services</span></div>
+        <p class="org-desc">Provides educational resources to immigrants and works to create a respected community and safe space. Programs include English language classes, U.S. citizenship preparation, computer literacy, and basic adult education.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://downtownlanguages.org" target="_blank" rel="noopener">downtownlanguages.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-multicultural" data-cat="multicultural" data-search="eugene springfield asian council friendship culture events asian american pacific islander">
+        <div class="org-name">Eugene/Springfield Asian Council</div>
+        <div class="org-tags"><span class="tag">Asian Pacific</span><span class="tag">Cultural Events</span></div>
+        <p class="org-desc">Creates opportunities that foster friendship and harmonious relations among all people by presenting events and activities that stimulate understanding of Asian and Asian-American cultures in Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Eugene, OR</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-multicultural" data-cat="multicultural" data-search="holt international children adoption global poverty orphan">
+        <div class="org-name">Holt International Children's Services</div>
+        <div class="org-tags"><span class="tag">Child Welfare</span><span class="tag">Global</span></div>
+        <p class="org-desc">Works toward a world where every child has a loving and secure home. Provides international adoption services, family preservation programs, and orphan care. Headquartered in Eugene with global reach.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413464000" class="phone-link">541-346-4000</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://holtinternational.org" target="_blank" rel="noopener">holtinternational.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-multicultural" data-cat="multicultural" data-search="center for family development CFD diverse families strengths community participation">
+        <div class="org-name">Center for Family Development (CFD)</div>
+        <div class="org-tags"><span class="tag">Family Support</span><span class="tag">Multicultural</span></div>
+        <p class="org-desc">Joins respectfully with diverse individuals and families to identify and access their strengths and resources to enhance their lives and participation in the community. Serves immigrant and culturally diverse families in Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Eugene, OR</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ EDUCATION ════════════════════════════════ -->
+  <section class="category-section cat-education" data-cat="education" id="sec-education">
+    <div class="section-header">
+      <div class="section-icon">📚</div>
+      <div>
+        <div class="section-title">Education &amp; Libraries</div>
+        <div class="section-desc">Public libraries, tutoring, literacy, and higher education resources</div>
+      </div>
+      <span class="section-count">4 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-education" data-cat="education" data-search="eugene public library books resources community programs children teen adult">
+        <div class="org-name">Eugene Public Library</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag">Community Hub</span></div>
+        <p class="org-desc">Free public library system with multiple branches. Offers books, digital resources, computer access, free tax help, social services resource guides, programming for all ages, and meeting spaces for community groups.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416824636" class="phone-link">541-682-4636</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://eugene.libguides.com/localservices" target="_blank" rel="noopener">eugene.libguides.com</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>100 W 10th Ave, Eugene</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-education" data-cat="education" data-search="springfield public library books programs community">
+        <div class="org-name">Springfield Public Library</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag">Community Hub</span></div>
+        <p class="org-desc">Serves Springfield residents with free access to books, digital resources, internet access, community programs, children's storytime, teen activities, and adult literacy support.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5417265254" class="phone-link">541-726-5254</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://thespringfieldlibrary.org" target="_blank" rel="noopener">thespringfieldlibrary.org</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>225 5th St, Springfield</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-education" data-cat="education" data-search="lane community college LCC adult education GED workforce training affordable">
+        <div class="org-name">Lane Community College (LCC)</div>
+        <div class="org-tags"><span class="tag">Higher Ed</span><span class="tag">Workforce Training</span></div>
+        <p class="org-desc">Offers affordable associate degrees, vocational certificates, GED/adult basic education, workforce development, ESL, and transfer programs. Financial aid and scholarships available. Multiple campuses including Eugene and Springfield sites.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5417478100" class="phone-link">541-747-8100</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://lanecc.edu" target="_blank" rel="noopener">lanecc.edu</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-education" data-cat="education" data-search="211info community resources directory referral services oregon southwest washington">
+        <div class="org-name">211info Oregon</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag urgent">24/7</span></div>
+        <p class="org-desc">Empowers Oregon and SW Washington communities by helping people identify, navigate, and connect with local resources. Comprehensive searchable database of health, human, and social services.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:211" class="phone-link">2-1-1</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://211info.org" target="_blank" rel="noopener">211info.org</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ ENVIRONMENT ════════════════════════════════ -->
+  <section class="category-section cat-environment" data-cat="environment" id="sec-environment">
+    <div class="section-header">
+      <div class="section-icon">🌲</div>
+      <div>
+        <div class="section-title">Environment &amp; Conservation</div>
+        <div class="section-desc">Land protection, habitat restoration, and environmental stewardship</div>
+      </div>
+      <span class="section-count">3 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-environment" data-cat="environment" data-search="mckenzie river trust land conservation easements habitat restoration western oregon">
+        <div class="org-name">McKenzie River Trust</div>
+        <div class="org-tags"><span class="tag">Land Conservation</span><span class="tag">Restoration</span></div>
+        <p class="org-desc">Acquires and manages land and conservation easements, restores habitats, and conducts public outreach in western Oregon. Protects some of the most ecologically significant lands along the McKenzie and Willamette rivers.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413453803" class="phone-link">541-345-3803</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://mckenzieriver.org" target="_blank" rel="noopener">mckenzieriver.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-environment" data-cat="environment" data-search="willamette riverkeeper water quality advocacy stewardship willamette river">
+        <div class="org-name">Willamette Riverkeeper</div>
+        <div class="org-tags"><span class="tag">Water Quality</span><span class="tag">Advocacy</span></div>
+        <p class="org-desc">Advocates for clean water, healthy habitat, and public access along the Willamette River. Conducts water quality monitoring, pollution accountability, and community education to protect this vital waterway.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://willametteriverkeeper.org" target="_blank" rel="noopener">willametteriverkeeper.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-environment" data-cat="environment" data-search="zero waste eugene recycling sustainability composting environment">
+        <div class="org-name">City of Eugene Sustainability Office</div>
+        <div class="org-tags"><span class="tag">Sustainability</span><span class="tag">City Services</span></div>
+        <p class="org-desc">Leads Eugene's sustainability programs including climate action planning, energy efficiency, zero waste initiatives, composting programs, and resources for residents and businesses to reduce their environmental impact.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416824428" class="phone-link">541-682-4428</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://eugene-or.gov/sustainability" target="_blank" rel="noopener">eugene-or.gov/sustainability</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ ARTS ════════════════════════════════ -->
+  <section class="category-section cat-arts" data-cat="arts" id="sec-arts">
+    <div class="section-header">
+      <div class="section-icon">🎨</div>
+      <div>
+        <div class="section-title">Arts, Culture &amp; Events</div>
+        <div class="section-desc">Arts organizations, cultural events, and creative community resources</div>
+      </div>
+      <span class="section-count">4 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-arts" data-cat="arts" data-search="oregon country fair community festival art craft music gathering">
+        <div class="org-name">Oregon Country Fair</div>
+        <div class="org-tags"><span class="tag">Annual Festival</span><span class="tag">Community</span></div>
+        <p class="org-desc">Beloved annual fair celebrating arts, crafts, music, and community since 1969. Held in Veneta near Eugene each July. The Jill Heiman Vision Fund provides grants to organizations addressing food and housing insecurity in Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413434298" class="phone-link">541-343-4298</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://oregoncountryfair.org" target="_blank" rel="noopener">oregoncountryfair.org</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>442 Lawrence St, Eugene</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-arts" data-cat="arts" data-search="lane arts council arts education programs grants community support">
+        <div class="org-name">Lane Arts Council</div>
+        <div class="org-tags"><span class="tag">Arts Grants</span><span class="tag">Education</span></div>
+        <p class="org-desc">Supports and promotes arts education and cultural programming throughout Lane County. Provides grants to artists and arts organizations, manages public art programs, and connects the community to creative resources.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413440080" class="phone-link">541-344-0080</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://lanearts.org" target="_blank" rel="noopener">lanearts.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-arts" data-cat="arts" data-search="hult center performing arts theater music symphony ballet eugene">
+        <div class="org-name">Hult Center for the Performing Arts</div>
+        <div class="org-tags"><span class="tag">Performing Arts</span><span class="tag">Venue</span></div>
+        <p class="org-desc">Eugene's premier performing arts venue hosting concerts, theatrical productions, dance, and community events. Home to the Eugene Symphony, Eugene Ballet, and many traveling national and international performers.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416827669" class="phone-link">541-682-5000</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://hultcenter.org" target="_blank" rel="noopener">hultcenter.org</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1 Eugene Center, Eugene</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-arts" data-cat="arts" data-search="jordan schnitzer museum art university oregon UO free">
+        <div class="org-name">Jordan Schnitzer Museum of Art (UO)</div>
+        <div class="org-tags"><span class="tag">Museum</span><span class="tag free">Free Admission</span></div>
+        <p class="org-desc">University of Oregon's premier art museum featuring significant collections of Pacific Northwest, Asian, and American art. Free for UO students and community members on certain days. An important cultural anchor for Lane County.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413464480" class="phone-link">541-346-3027</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://jsma.uoregon.edu" target="_blank" rel="noopener">jsma.uoregon.edu</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1430 Johnson Ln, University of Oregon</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ VETERANS ════════════════════════════════ -->
+  <section class="category-section cat-veterans" data-cat="veterans" id="sec-veterans">
+    <div class="section-header">
+      <div class="section-icon">🎖️</div>
+      <div>
+        <div class="section-title">Veterans Services</div>
+        <div class="section-desc">Benefits, support, and community for military veterans and their families</div>
+      </div>
+      <span class="section-count">4 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-veterans" data-cat="veterans" data-search="lane county veterans service office benefits claims federal state assistance">
+        <div class="org-name">Lane County Veterans Service Office</div>
+        <div class="org-tags"><span class="tag free">Free</span><span class="tag">Benefits Help</span></div>
+        <p class="org-desc">Connects veterans to their earned state and federal benefits. Provides claims assistance, discharge upgrade help, outreach, and advocacy for Lane County veterans and their families. Free accredited representation.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416823549" class="phone-link">541-682-3549</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://lanecountyor.gov/veterans" target="_blank" rel="noopener">lanecountyor.gov/veterans</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-veterans" data-cat="veterans" data-search="oregon department veterans affairs ODVA state benefits resources">
+        <div class="org-name">Oregon Department of Veterans' Affairs (ODVA)</div>
+        <div class="org-tags"><span class="tag">State Agency</span><span class="tag">Benefits</span></div>
+        <p class="org-desc">State agency providing programs and services to maintain and enhance the quality of life for Oregon veterans, ensuring basic needs are met. Administers veteran home loans, education benefits, and additional state-specific programs.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:18006284557" class="phone-link">1-800-828-4557</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://oregon.gov/odva" target="_blank" rel="noopener">oregon.gov/odva</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-veterans" data-cat="veterans" data-search="veteran crisis line mental health suicide prevention 24/7 text call">
+        <div class="org-name">Veterans Crisis Line</div>
+        <div class="org-tags"><span class="tag urgent">24/7</span><span class="tag free">Free</span></div>
+        <p class="org-desc">Free, confidential crisis support for veterans, service members, and their families. Available by phone, text, or chat 24/7. Staffed by responders, many of whom are veterans themselves.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:988" class="phone-link">988 then press 1</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://veteranscrisisline.net" target="_blank" rel="noopener">veteranscrisisline.net</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-veterans" data-cat="veterans" data-search="UO student veterans center erb memorial union university oregon services">
+        <div class="org-name">UO Student Veterans Center</div>
+        <div class="org-tags"><span class="tag">Student Veterans</span><span class="tag">Education</span></div>
+        <p class="org-desc">Located in the Erb Memorial Union, provides study and meeting space, computer and printing stations, and dedicated staff to assist student veterans, dependents, and family members with personal and academic needs at the University of Oregon.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413465353" class="phone-link">541-346-5353</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>EMU, University of Oregon, Eugene</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ FAITH ════════════════════════════════ -->
+  <section class="category-section cat-faith" data-cat="faith" id="sec-faith">
+    <div class="section-header">
+      <div class="section-icon">🕊️</div>
+      <div>
+        <div class="section-title">Faith-Based Community Services</div>
+        <div class="section-desc">Faith communities providing social services, community meals, and mutual aid</div>
+      </div>
+      <span class="section-count">3 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-faith" data-cat="faith" data-search="catholic community services lane county food housing rent energy ID phone">
+        <div class="org-name">Catholic Community Services (CCS)</div>
+        <div class="org-tags"><span class="tag">Emergency Aid</span><span class="tag">Food</span></div>
+        <p class="org-desc">Catholic agency in Oregon providing social services for low-income families: food boxes, clothing, phone access, housing information, rent assistance, energy assistance, and ID support. Serves Eugene and Springfield with warm, dignified service.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413453628" class="phone-link">541-345-3628</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://ccslc.org" target="_blank" rel="noopener">ccslc.org</a></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-faith" data-cat="faith" data-search="interfaith coalition food pantry meal site spiritual community service eugene">
+        <div class="org-name">Eugene Ecumenical Ministries &amp; Interfaith Coalitions</div>
+        <div class="org-tags"><span class="tag">Interfaith</span><span class="tag">Community Service</span></div>
+        <p class="org-desc">Network of Eugene and Springfield faith communities collaborating on social services, community meals, warming center sites, and mutual aid. Many congregations operate pantries, support Egan Warming Centers, and host community programs open to all.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Search 211info.org for faith-based programs near you</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-faith" data-cat="faith" data-search="first christian church community resource hub meals downtown eugene">
+        <div class="org-name">First Christian Church — Community Hub</div>
+        <div class="org-tags"><span class="tag">Meals</span><span class="tag">Community Space</span></div>
+        <p class="org-desc">Downtown Eugene congregation that hosts the Burrito Brigade meal prep on Sundays and serves as a hub for community gatherings and warming center shuttle pickup when Egan Warming Centers are activated.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>1144 Oak St, Eugene</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════ ANIMALS ════════════════════════════════ -->
+  <section class="category-section cat-animals" data-cat="animals" id="sec-animals">
+    <div class="section-header">
+      <div class="section-icon">🐾</div>
+      <div>
+        <div class="section-title">Animal Welfare</div>
+        <div class="section-desc">Shelters, adoption, and pet support resources</div>
+      </div>
+      <span class="section-count">2 listings</span>
+    </div>
+    <div class="card-grid">
+
+      <article class="org-card cat-animals" data-cat="animals" data-search="greenhill humane society animal shelter adoption pets dogs cats eugene">
+        <div class="org-name">Greenhill Humane Society</div>
+        <div class="org-tags"><span class="tag">Animal Shelter</span><span class="tag">Adoption</span></div>
+        <p class="org-desc">Lane County's leading animal welfare organization. Provides shelter, care, and adoption services for cats, dogs, and other animals. Also offers low-cost vaccines, lost-pet reunification, foster programs, and community pet food assistance.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416893579" class="phone-link">541-689-3579</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://greenhill.org" target="_blank" rel="noopener">greenhill.org</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>88530 Green Hill Rd, Eugene</span></div>
+        </div>
+      </article>
+
+      <article class="org-card cat-animals" data-cat="animals" data-search="lane county animal services lost found stray pets county shelter">
+        <div class="org-name">Lane County Animal Services</div>
+        <div class="org-tags"><span class="tag">County Services</span><span class="tag">Lost &amp; Found</span></div>
+        <p class="org-desc">County agency responsible for lost and found pets, stray animals, animal licensing, bite investigations, and enforcing animal control laws throughout Lane County. Works with rescue partners to rehome animals.</p>
+        <div class="org-meta">
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416825603" class="phone-link">541-682-3643</a></div>
+          <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://lanecountyor.gov/animal" target="_blank" rel="noopener">lanecountyor.gov/animal</a></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p><strong>Eugene &amp; Springfield Community Resource Directory</strong></p>
+  <p>Serving Lane County, Oregon · Built for and by the community</p>
+  <p style="margin-top:12px;">
+    Always verify hours and availability directly with each organization.<br>
+    For immediate needs call <strong>211</strong> (all services) or <strong>988</strong> (mental health crisis).<br>
+    To suggest an addition or correction, please <a href="https://github.com">open an issue on GitHub</a>.
+  </p>
+  <p style="margin-top:16px; font-size:.78rem;">
+    Data compiled from Lane County public records, 211info.org, Eugene Public Library, and verified organizational websites.
+    Not affiliated with any individual organization. Updated 2025.
+  </p>
+</footer>
+
+<!-- ── SCROLL TO TOP ── -->
+<button id="scrollTop" aria-label="Scroll to top" title="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+  // ── Search & Filter logic ──
+  const searchInput = document.getElementById('searchInput');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const allCards = document.querySelectorAll('.org-card');
+  const allSections = document.querySelectorAll('.category-section');
+  const resultsCount = document.getElementById('resultsCount');
+  const emptyState = document.getElementById('emptyState');
+
+  let currentCat = 'all';
+  let currentSearch = '';
+
+  function updateDisplay() {
+    const q = currentSearch.toLowerCase().trim();
+    let visible = 0;
+
+    allCards.forEach(card => {
+      const cardCat = card.dataset.cat;
+      const cardSearch = (card.dataset.search + ' ' + card.querySelector('.org-name').textContent).toLowerCase();
+      const matchesCat = currentCat === 'all' || cardCat === currentCat;
+      const matchesSearch = !q || cardSearch.includes(q);
+      const show = matchesCat && matchesSearch;
+      card.dataset.hidden = show ? 'false' : 'true';
+      if (show) visible++;
+    });
+
+    // Show/hide sections
+    allSections.forEach(section => {
+      const sectionCat = section.dataset.cat;
+      const hasVisible = section.querySelectorAll('.org-card:not([data-hidden="true"])').length > 0;
+      const matchesCatFilter = currentCat === 'all' || sectionCat === currentCat;
+      section.dataset.hidden = (!matchesCatFilter || !hasVisible) ? 'true' : 'false';
+    });
+
+    resultsCount.textContent = visible === 0 ? '' : `${visible} result${visible !== 1 ? 's' : ''}`;
+    emptyState.classList.toggle('visible', visible === 0);
+  }
+
+  searchInput.addEventListener('input', e => {
+    currentSearch = e.target.value;
+    updateDisplay();
+  });
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentCat = btn.dataset.cat;
+      updateDisplay();
+    });
+  });
+
+  // Initialize counts
+  updateDisplay();
+
+  // ── Scroll to top ──
+  const scrollBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    scrollBtn.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+  scrollBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+</script>
+</body>
+</html>
