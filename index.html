@@ -2110,63 +2110,6 @@
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
 
-  <div class="service-calendar">
-    <table>
-      <thead>
-        <tr>
-          <th class="day">Day</th>
-          <th class="service">Service</th>
-          <th class="location">Location</th>
-          <th class="time">Time</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="day">Monday</td>
-          <td class="service">Free Laundry</td>
-          <td class="location">Hosea Youth Services</td>
-          <td class="time">4:30pm–6:30pm</td>
-        </tr>
-        <tr>
-          <td class="day">Monday</td>
-          <td class="service">Free Showers</td>
-          <td class="location">Carry It Forward</td>
-          <td class="time">9:30am–4:30pm</td>
-        </tr>
-        <tr>
-          <td class="day">Monday–Friday</td>
-          <td class="service">Showers, Laundry, Meals, Support</td>
-          <td class="location">Eugene Service Station</td>
-          <td class="time">8:00am–5:00pm</td>
-        </tr>
-        <tr>
-          <td class="day">Wednesday</td>
-          <td class="service">Free Laundry</td>
-          <td class="location">Hosea Youth Services</td>
-          <td class="time">4:30pm–6:30pm</td>
-        </tr>
-        <tr>
-          <td class="day">Wednesday</td>
-          <td class="service">Free Showers</td>
-          <td class="location">Carry It Forward</td>
-          <td class="time">4:30pm–6:30pm</td>
-        </tr>
-        <tr>
-          <td class="day">Thursday</td>
-          <td class="service">Free Laundry</td>
-          <td class="location">Hosea Youth Services</td>
-          <td class="time">4:30pm–6:30pm</td>
-        </tr>
-        <tr>
-          <td class="day">Varies</td>
-          <td class="service">Free Haircuts / Beard Trims</td>
-          <td class="location">Eugene Mission, ShelterCare</td>
-          <td class="time">Call for schedule</td>
-        </tr>
-      </tbody>
-    </table>
-    <p class="calendar-disclaimer">This calendar is compiled from available information but may not be routinely updated. Please verify schedules directly with each organization before visiting.</p>
-  </div>
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentCat = btn.dataset.cat;
