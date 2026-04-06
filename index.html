@@ -439,6 +439,8 @@
   .cat-veterans .section-icon { background: #eff6ff; }
   .cat-animals  { --card-accent: #92400e; }
   .cat-animals .section-icon { background: #fef3c7; }
+  .cat-essential { --card-accent: #059669; }
+  .cat-essential .section-icon { background: #d1fae5; }
   .cat-faith    { --card-accent: #4338ca; }
   .cat-faith .section-icon { background: #eef2ff; }
 
@@ -571,10 +573,10 @@
   <h1>Eugene &amp; Springfield<br><span>Community Resource Directory</span></h1>
   <p class="hero-sub">A free, open directory of verified services, nonprofits, and organizations serving our community.</p>
   <div class="hero-stats">
-    <span class="stat-pill"><strong>108</strong> Organizations</span>
-    <span class="stat-pill"><strong>18</strong> Categories</span>
+    <span class="stat-pill"><strong>106</strong> Organizations</span>
+    <span class="stat-pill"><strong>19</strong> Categories</span>
     <span class="stat-pill"><strong>Free</strong> to Use</span>
-    <span class="stat-pill">Updated <strong>March 2026</strong></span>
+    <span class="stat-pill">Updated <strong>April 2026</strong></span>
   </div>
 </header>
 
@@ -616,6 +618,7 @@
       <button class="filter-btn" data-cat="veterans">Veterans</button>
       <button class="filter-btn" data-cat="faith">Faith-Based</button>
       <button class="filter-btn" data-cat="animals">Animals</button>
+      <button class="filter-btn" data-cat="essential">Essential Services</button>
       <button class="filter-btn" data-cat="calendar">Calendar & Events</button>
     </div>
     <span class="results-count" id="resultsCount" aria-live="polite"></span>
@@ -1854,7 +1857,133 @@
 
     </div>
   </section>
+<!-- ════════════════════════════════ ESSENTIAL SERVICES ════════════════════════════════ -->
+<section class="category-section cat-essential" data-cat="essential" id="sec-essential">
+  <div class="section-header">
+    <div class="section-icon">🧺</div>
+    <div>
+      <div class="section-title">Essential Services</div>
+      <div class="section-desc">Laundry, showers, haircuts, and other basic needs services</div>
+    </div>
+    <span class="section-count">5 listings</span>
+  </div>
+  <div class="card-grid">
 
+    <article class="org-card cat-essential" data-cat="essential" data-search="hosea youth services free laundry homeless eugene">
+      <div class="org-name">Hosea Youth Services — Free Laundry</div>
+      <div class="org-tags"><span class="tag free">Free</span><span class="tag">Laundry</span><span class="tag">Youth</span></div>
+      <p class="org-desc">Free laundry services for youth and young adults experiencing homelessness. Walk‑in hours Monday, Wednesday, and Thursday evenings.</p>
+      <div class="org-meta">
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>Mon, Wed, Thu 4:30pm–6:30pm</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>834 Monroe St, Eugene, OR 97402</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413445583" class="phone-link">541‑344‑5583</a></div>
+      </div>
+    </article>
+
+    <article class="org-card cat-essential" data-cat="essential" data-search="eugene service station st vincent de paul showers laundry food clothing">
+      <div class="org-name">Eugene Service Station (St. Vincent de Paul)</div>
+      <div class="org-tags"><span class="tag free">Free</span><span class="tag">Multi‑Service</span><span class="tag">Day Center</span></div>
+      <p class="org-desc">Day center for adults experiencing homelessness. Provides showers, laundry, clothing, food, hygiene supplies, phone/computer access, mail service, and help with housing, jobs, and benefits.</p>
+      <div class="org-meta">
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>Daily 8:00am–5:00pm</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>450 Hwy 99 N, Eugene, OR 97402</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5414618688" class="phone-link">541‑461‑8688</a></div>
+      </div>
+    </article>
+
+    <article class="org-card cat-essential" data-cat="essential" data-search="carry it forward wash shower services free showers homeless eugene">
+      <div class="org-name">Carry It Forward — Wash Shower Services</div>
+      <div class="org-tags"><span class="tag free">Free</span><span class="tag">Showers</span><span class="tag">Hygiene</span></div>
+      <p class="org-desc">Free, private shower facilities for individuals experiencing homelessness. Also provides hygiene kits and laundry services when available.</p>
+      <div class="org-meta">
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>Monday 9:30am–4:30pm, Wednesday 4:30pm–6:30pm</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>525 Highway 99 N, Eugene, OR 97402</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5416540139" class="phone-link">541‑654‑0139</a></div>
+      </div>
+    </article>
+
+    <article class="org-card cat-essential" data-cat="essential" data-search="free haircuts unhoused eugene mission sheltercare">
+      <div class="org-name">Free Haircuts for Unhoused Individuals</div>
+      <div class="org-tags"><span class="tag free">Free</span><span class="tag">Haircuts</span><span class="tag">Beard Trims</span></div>
+      <p class="org-desc">Periodic free haircut and beard trim events for people experiencing homelessness. Offered by local barbers, Eugene Mission, and ShelterCare. Call ahead for schedule.</p>
+      <div class="org-meta">
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>Varies; call for upcoming events</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Multiple locations (Eugene Mission, ShelterCare, community centers)</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg><a href="tel:5413443251" class="phone-link">541‑344‑3251 (Eugene Mission)</a></div>
+      </div>
+    </article>
+
+    <article class="org-card cat-essential" data-cat="essential" data-search="medical health referrals free clinic white bird dove medical">
+      <div class="org-name">Health & Medical Service Referrals</div>
+      <div class="org-tags"><span class="tag free">Free</span><span class="tag">Medical</span><span class="tag">Referrals</span></div>
+      <p class="org-desc">Connections to free or low‑cost medical, dental, and mental health services in Lane County. Includes White Bird Clinic, Dove Medical (pregnancy/STI testing), and community health centers.</p>
+      <div class="org-meta">
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg><span>Varies by provider; call 211 for guidance</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Multiple clinics across Eugene & Springfield</span></div>
+        <div class="meta-row"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg><a href="https://211info.org" target="_blank" rel="noopener">211info.org</a></div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="service-calendar">
+    <table>
+      <thead>
+        <tr>
+          <th class="day">Day</th>
+          <th class="service">Service</th>
+          <th class="location">Location</th>
+          <th class="time">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="day">Monday</td>
+          <td class="service">Free Laundry</td>
+          <td class="location">Hosea Youth Services</td>
+          <td class="time">4:30pm–6:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Monday</td>
+          <td class="service">Free Showers</td>
+          <td class="location">Carry It Forward</td>
+          <td class="time">9:30am–4:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Monday–Friday</td>
+          <td class="service">Showers, Laundry, Meals, Support</td>
+          <td class="location">Eugene Service Station</td>
+          <td class="time">8:00am–5:00pm</td>
+        </tr>
+        <tr>
+          <td class="day">Wednesday</td>
+          <td class="service">Free Laundry</td>
+          <td class="location">Hosea Youth Services</td>
+          <td class="time">4:30pm–6:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Wednesday</td>
+          <td class="service">Free Showers</td>
+          <td class="location">Carry It Forward</td>
+          <td class="time">4:30pm–6:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Thursday</td>
+          <td class="service">Free Laundry</td>
+          <td class="location">Hosea Youth Services</td>
+          <td class="time">4:30pm–6:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Varies</td>
+          <td class="service">Free Haircuts / Beard Trims</td>
+          <td class="location">Eugene Mission, ShelterCare</td>
+          <td class="time">Call for schedule</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="calendar-disclaimer">This calendar is compiled from available information but may not be routinely updated. Please verify schedules directly with each organization before visiting.</p>
+  </div>
+</section>
   <!-- ════════════════════════════════ CALENDAR & EVENTS ════════════════════════════════ -->
   <section class="category-section cat-calendar" data-cat="calendar" id="sec-calendar">
     <div class="section-header">
@@ -1926,7 +2055,7 @@
   </p>
   <p style="margin-top:16px; font-size:.78rem;">
     Data compiled from Lane County public records, 211info.org, Eugene Public Library, and verified organizational websites.
-    Not affiliated with any individual organization. Updated March 2026.
+    Not affiliated with any individual organization. Updated April 2026.
   </p>
 </footer>
 
@@ -1980,6 +2109,64 @@
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
+
+  <div class="service-calendar">
+    <table>
+      <thead>
+        <tr>
+          <th class="day">Day</th>
+          <th class="service">Service</th>
+          <th class="location">Location</th>
+          <th class="time">Time</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="day">Monday</td>
+          <td class="service">Free Laundry</td>
+          <td class="location">Hosea Youth Services</td>
+          <td class="time">4:30pm–6:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Monday</td>
+          <td class="service">Free Showers</td>
+          <td class="location">Carry It Forward</td>
+          <td class="time">9:30am–4:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Monday–Friday</td>
+          <td class="service">Showers, Laundry, Meals, Support</td>
+          <td class="location">Eugene Service Station</td>
+          <td class="time">8:00am–5:00pm</td>
+        </tr>
+        <tr>
+          <td class="day">Wednesday</td>
+          <td class="service">Free Laundry</td>
+          <td class="location">Hosea Youth Services</td>
+          <td class="time">4:30pm–6:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Wednesday</td>
+          <td class="service">Free Showers</td>
+          <td class="location">Carry It Forward</td>
+          <td class="time">4:30pm–6:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Thursday</td>
+          <td class="service">Free Laundry</td>
+          <td class="location">Hosea Youth Services</td>
+          <td class="time">4:30pm–6:30pm</td>
+        </tr>
+        <tr>
+          <td class="day">Varies</td>
+          <td class="service">Free Haircuts / Beard Trims</td>
+          <td class="location">Eugene Mission, ShelterCare</td>
+          <td class="time">Call for schedule</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="calendar-disclaimer">This calendar is compiled from available information but may not be routinely updated. Please verify schedules directly with each organization before visiting.</p>
+  </div>
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       currentCat = btn.dataset.cat;
