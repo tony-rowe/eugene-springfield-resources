@@ -457,6 +457,64 @@
   .empty-state .emoji { font-size: 3rem; margin-bottom: 14px; }
 
   .empty-state p { font-size: 1rem; }
+  /* ── SERVICE CALENDAR TABLE ── */
+  .service-calendar {
+    margin-top: 32px;
+    border: 1px solid rgba(28,61,47,.12);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--white);
+    box-shadow: var(--shadow-sm);
+  }
+  .service-calendar table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+  }
+  .service-calendar thead {
+    background: var(--forest);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.75rem;
+  }
+  .service-calendar th,
+  .service-calendar td {
+    padding: 10px 14px;
+    text-align: left;
+    border-bottom: 1px solid rgba(28,61,47,.08);
+  }
+  .service-calendar tbody tr:hover {
+    background: var(--parchment);
+  }
+  .service-calendar .day {
+    font-weight: 600;
+    color: var(--forest);
+    width: 16%;
+  }
+  .service-calendar .service {
+    width: 28%;
+  }
+  .service-calendar .location {
+    width: 28%;
+  }
+  .service-calendar .time {
+    width: 28%;
+    font-family: 'DM Mono', monospace;
+    color: var(--ink-mid);
+  }
+  .calendar-disclaimer {
+    margin-top: 12px;
+    font-size: 0.8rem;
+    color: var(--ink-lt);
+    font-style: italic;
+    text-align: center;
+    padding: 8px 16px;
+    border: 1px dashed rgba(28,61,47,.2);
+    border-radius: var(--radius);
+    background: var(--cream);
+  }
 
   /* ── 211 CALLOUT ── */
   .resource-211 {
