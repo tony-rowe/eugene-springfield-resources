@@ -1,0 +1,3679 @@
+[
+  {
+    "category": "crisis",
+    "section_title": "Crisis & Emergency",
+    "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
+    "search_keywords": "crisis lane county behavioral health 24/7 mental health substance",
+    "name": "Lane County Behavioral Health Crisis Line",
+    "tags": [
+      {
+        "text": "24/7",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      },
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      }
+    ],
+    "description": "Around-the-clock crisis intervention for mental health emergencies, suicidal ideation, and substance use crises serving all of Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416821001",
+        "text": "541-682-1001"
+      },
+      {
+        "type": "text",
+        "text": "Also reachable via Oregon 988 line"
+      }
+    ]
+  },
+  {
+    "category": "crisis",
+    "section_title": "Crisis & Emergency",
+    "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
+    "search_keywords": "988 suicide crisis lifeline national 24/7",
+    "name": "Oregon 988 Suicide & Crisis Lifeline",
+    "tags": [
+      {
+        "text": "24/7",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      },
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      }
+    ],
+    "description": "Dial or text988for immediate support during any mental health, suicidal, or substance use crisis. Available in Spanish and for Deaf/hard-of-hearing communities.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:988",
+        "text": "988 (call or text)"
+      },
+      {
+        "type": "link",
+        "href": "https://988lifeline.org",
+        "text": "988lifeline.org"
+      }
+    ]
+  },
+  {
+    "category": "crisis",
+    "section_title": "Crisis & Emergency",
+    "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
+    "search_keywords": "white bird clinic cahoots mobile crisis response mental health street",
+    "name": "White Bird Clinic / CAHOOTS",
+    "tags": [
+      {
+        "text": "Crisis Response",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      }
+    ],
+    "description": "White Bird Clinic provides walk-in mental health, crisis counseling, and medical services. CAHOOTS (Crisis Assistance Helping Out On The Streets) was a nationally recognized mobile crisis model — check current status. White Bird remains a primary mental health resource.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416872366",
+        "text": "541-687-2366 (crisis)"
+      },
+      {
+        "type": "link",
+        "href": "https://whitebirdclinic.org",
+        "text": "whitebirdclinic.org"
+      },
+      {
+        "type": "text",
+        "text": "341 E 12th Ave, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "crisis",
+    "section_title": "Crisis & Emergency",
+    "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
+    "search_keywords": "womenspace domestic violence shelter lane county",
+    "name": "Womenspace",
+    "tags": [
+      {
+        "text": "DV Support",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      },
+      {
+        "text": "Confidential",
+        "class": [
+          "tag",
+          "free"
+        ]
+      }
+    ],
+    "description": "Prevents domestic violence in intimate partner relationships in Lane County and supports survivors in claiming personal power. Offers shelter, legal advocacy, counseling, and support groups.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413433223",
+        "text": "541-343-3223 (hotline)"
+      },
+      {
+        "type": "link",
+        "href": "https://womenspace.org",
+        "text": "womenspace.org"
+      }
+    ]
+  },
+  {
+    "category": "crisis",
+    "section_title": "Crisis & Emergency",
+    "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
+    "search_keywords": "youth crisis response program children teens parents 24/7",
+    "name": "Lane County Youth Crisis Response",
+    "tags": [
+      {
+        "text": "Youth",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      },
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      }
+    ],
+    "description": "For parents or caregivers of children up to age 17 experiencing a behavioral health or mental health crisis. Connects families to immediate mobile response and follow-up services.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:18889899990",
+        "text": "1-888-989-9990"
+      }
+    ]
+  },
+  {
+    "category": "crisis",
+    "section_title": "Crisis & Emergency",
+    "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
+    "search_keywords": "trauma intervention program TIP volunteers emotional first aid tragedy",
+    "name": "Trauma Intervention Program of Lane County (TIP)",
+    "tags": [
+      {
+        "text": "Volunteer",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Specially trained volunteers provide emotional first aid and practical support to survivors of traumatic events and their families in the first hours after a tragedy. Dispatched through emergency services.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5412866416",
+        "text": "541-286-6416"
+      },
+      {
+        "type": "link",
+        "href": "https://tiplancecounty.org",
+        "text": "TIPLaneCounty.org"
+      }
+    ]
+  },
+  {
+    "category": "crisis",
+    "section_title": "Crisis & Emergency",
+    "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
+    "search_keywords": "kids first children advocacy center crime abuse intervention",
+    "name": "Kids FIRST",
+    "tags": [
+      {
+        "text": "Children",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Advocacy",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Lane County's children's advocacy center providing essential intervention and advocacy services for children impacted by crime. Forensic interviews, trauma-informed care, and coordination with law enforcement and child welfare.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Eugene, OR"
+      }
+    ]
+  },
+  {
+    "category": "crisis",
+    "section_title": "Crisis & Emergency",
+    "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
+    "search_keywords": "ann's heart women shelter springfield unhoused women",
+    "name": "Ann's Heart Women's Shelter",
+    "tags": [
+      {
+        "text": "Shelter",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      }
+    ],
+    "description": "Grassroots Springfield organization providing stable housing for unhoused women. Staff work one-on-one with guests to provide resources for transitioning to permanent housing.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5418979764",
+        "text": "541-897-9764"
+      },
+      {
+        "type": "link",
+        "href": "https://annsheartWomensshelter.org",
+        "text": "AnnsHeartWomensShelter.org"
+      },
+      {
+        "type": "text",
+        "text": "PO Box 499, Springfield, OR 97477"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "st vincent de paul svdp housing food employment clothing emergency eugene",
+    "name": "St. Vincent de Paul Society of Lane County",
+    "tags": [
+      {
+        "text": "Housing",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Emergency Services",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "One of Lane County's largest social service providers. Operates emergency shelters (Dawn to Dawn, Egan Warming Centers), overnight parking, the Eugene Service Station, safe camping programs, food assistance, clothing vouchers, and rental assistance.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416864600",
+        "text": "541-686-4600"
+      },
+      {
+        "type": "link",
+        "href": "https://www.svdp.us",
+        "text": "svdp.us"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "eugene mission shelter recovery meals laundry women children addiction",
+    "name": "Eugene Mission",
+    "tags": [
+      {
+        "text": "Shelter",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Recovery",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides emergency housing, meals, laundry, and other services for homeless individuals and families in Eugene. Also offers addiction recovery, job training, and a separate Center for Women and Children.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413443251",
+        "text": "541-344-3251"
+      },
+      {
+        "type": "link",
+        "href": "https://eugenemission.org",
+        "text": "eugenemission.org"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "homes for good affordable housing low income public housing lane county",
+    "name": "Homes for Good",
+    "tags": [
+      {
+        "text": "Affordable Housing",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Section 8",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Lane County's public housing authority. Provides affordable housing, administers Section 8 housing choice vouchers, and develops new affordable housing projects for low-income residents throughout Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416822483",
+        "text": "541-682-2483"
+      },
+      {
+        "type": "link",
+        "href": "https://www.homesforgood.org",
+        "text": "homesforgood.org"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "sheltercare transitional housing mental illness birch program",
+    "name": "ShelterCare",
+    "tags": [
+      {
+        "text": "Transitional Housing",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Mental Health",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides transitional and permanent supportive housing for individuals with mental illness or those recently released from incarceration. The Birch program offers a 6-month transition period for stable living.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413421152",
+        "text": "541-342-1152"
+      },
+      {
+        "type": "link",
+        "href": "https://sheltercare.org",
+        "text": "sheltercare.org"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "community supported shelters CSS safe spot tiny homes camping houseless",
+    "name": "Community Supported Shelters (CSS)",
+    "tags": [
+      {
+        "text": "Safe Camping",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Tiny Homes",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Manages Safe Spot Communities — safe, legal spaces for people experiencing homelessness. Operates employment support, healthcare connections, and recovery services that restore dignity and stability.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://communitysupportedshelters.org",
+        "text": "communitysupportedshelters.org"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "sponsors inc reentry conviction housing job community",
+    "name": "Sponsors, Inc.",
+    "tags": [
+      {
+        "text": "Re-entry",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Housing",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "From day one, helps people with conviction histories find housing, employment, and community to create more hopeful futures. A proven and cost-effective alternative to incarceration.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5414858341",
+        "text": "541-485-8341"
+      },
+      {
+        "type": "link",
+        "href": "https://sponsorsinc.org",
+        "text": "SponsorsInc.org"
+      },
+      {
+        "type": "text",
+        "text": "338 Hwy 99, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "springfield eugene tenant association hotline rental rights eviction",
+    "name": "Springfield-Eugene Tenant Association",
+    "tags": [
+      {
+        "text": "Tenant Rights",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides resources and advocacy for tenants facing eviction, unsafe conditions, or housing instability. Operates a tenant rights hotline and offers guidance on Oregon landlord-tenant law.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5419723715",
+        "text": "541-972-3715"
+      },
+      {
+        "type": "link",
+        "href": "https://springfieldeugenetenantassociation.com",
+        "text": "springfieldeugenetenantassociation.com"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "15th night community youth shelter runaway homeless teens 11-20",
+    "name": "15th Night",
+    "tags": [
+      {
+        "text": "Youth Homelessness",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Community effort to end youth homelessness in Lane County. Coordinates across organizations to identify beds available right now and connect youth to shelter and services before chronic homelessness sets in.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://15thnight.org",
+        "text": "15thnight.org"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "looking glass station 7 youth shelter runaway homeless teens counseling",
+    "name": "Looking Glass Community Services — Station #7",
+    "tags": [
+      {
+        "text": "Youth Shelter",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Emergency shelter for runaway and homeless youth ages 11–20. Provides meals, showers, laundry, clothing, hygiene items, counseling, education support, and job training services.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416893111",
+        "text": "541-689-3111"
+      },
+      {
+        "type": "link",
+        "href": "https://lookingglass.us",
+        "text": "lookingglass.us"
+      },
+      {
+        "type": "text",
+        "text": "931 W 7th Ave, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "catholic community services CCS oasis conestoga huts families children springfield",
+    "name": "Catholic Community Services of Lane County",
+    "tags": [
+      {
+        "text": "Housing",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Emergency Aid",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides food boxes, rent assistance, emergency motel vouchers for families, the OASIS program (Conestoga Huts and tiny homes for families with children in Springfield), and case management.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413453628",
+        "text": "541-345-3628"
+      },
+      {
+        "type": "link",
+        "href": "https://ccslc.org",
+        "text": "ccslc.org"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Homelessness",
+    "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
+    "search_keywords": "egan warming center cold weather shelter volunteers winter pets",
+    "name": "Egan Warming Centers",
+    "tags": [
+      {
+        "text": "Seasonal Shelter",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Pets Welcome",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Opens emergency warming shelters across Eugene and Springfield when temperatures drop below 30°F. Run predominantly by volunteers; provides dinner, breakfast, and sleeping space. Pets always welcome. Text \"Join\" to 541-730-3071 for alerts.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://www.svdp.us/services/shelter-assistance/egan-warming-centers/",
+        "text": "svdp.us — Egan Warming Centers"
+      }
+    ]
+  },
+  {
+    "category": "food",
+    "section_title": "Food & Nutrition",
+    "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
+    "search_keywords": "food for lane county food bank hunger emergency pantry distribution",
+    "name": "Food for Lane County",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Food Bank",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Lane County's primary food bank. Provides emergency and non-emergency food assistance throughout the county, operating a network of food pantries, mobile pantries, and partner agencies to alleviate hunger.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413434359",
+        "text": "541-343-4359"
+      },
+      {
+        "type": "link",
+        "href": "https://foodforlanecounty.org",
+        "text": "foodforlanecounty.org"
+      }
+    ]
+  },
+  {
+    "category": "food",
+    "section_title": "Food & Nutrition",
+    "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
+    "search_keywords": "burrito brigade vegan meals delivery volunteers eugene springfield lane county",
+    "name": "Burrito Brigade",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Vegan",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Volunteer",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Delivers 300,000+ vegan meals a year to hungry individuals in Eugene and Springfield by foot, bike, and car. Weekend volunteers gather at local churches to prepare and distribute burritos. Also operates the Little Free Pantries network.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://burritobrigade.org",
+        "text": "burritobrigade.org"
+      }
+    ]
+  },
+  {
+    "category": "food",
+    "section_title": "Food & Nutrition",
+    "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
+    "search_keywords": "little free pantries 24/7 neighborhoods nonperishable hygiene veneta junction city",
+    "name": "Little Free Pantries",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "24/7",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      }
+    ],
+    "description": "Over 50 community pantries located in neighborhoods across Eugene, Springfield, Veneta, Junction City, and Florence. Stocked weekly with nonperishable food, beverages, and hygiene products. Available at any hour.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://burritobrigade.org/pantries/",
+        "text": "burritobrigade.org/pantries"
+      }
+    ]
+  },
+  {
+    "category": "food",
+    "section_title": "Food & Nutrition",
+    "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
+    "search_keywords": "community fridges free food 16th 24th grant alder bus",
+    "name": "Community Fridges Eugene",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "24/7",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      }
+    ],
+    "description": "Community-stocked refrigerators offering free food around the clock. Multiple locations including: 870 W. 16th Ave, 53 W. 24th Place, 2116 Grant St, and 1790 Alder St — all accessible by LTD bus.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Multiple locations — see Eugene community boards"
+      }
+    ]
+  },
+  {
+    "category": "food",
+    "section_title": "Food & Nutrition",
+    "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
+    "search_keywords": "salvation army food clothing rent eugene springfield assistance",
+    "name": "The Salvation Army — Eugene & Springfield",
+    "tags": [
+      {
+        "text": "Food",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Emergency Aid",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides food assistance (assigned through Food for Lane County network), clothing vouchers, and one-time rent assistance when funds are available. Two service centers: Eugene (640 W 7th Ave) and Springfield (1275 Mill St).",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413433328",
+        "text": "541-343-3328 (Eugene)"
+      },
+      {
+        "type": "link",
+        "href": "tel:5417476229",
+        "text": "541-747-6229 (Springfield)"
+      }
+    ]
+  },
+  {
+    "category": "food",
+    "section_title": "Food & Nutrition",
+    "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
+    "search_keywords": "lane county diaper bank diapers families infants low income",
+    "name": "Lane County Diaper Bank",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Families",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides free diapers to families in Lane County who cannot afford them, so parents don't have to choose between paying rent and buying diapers. Serves hundreds of families monthly.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5412210824",
+        "text": "541-221-0824"
+      },
+      {
+        "type": "link",
+        "href": "https://lcdiaperbank.org",
+        "text": "LCDiaperBank.org"
+      },
+      {
+        "type": "text",
+        "text": "4107 Industrial Ave, Warehouse 2, Springfield"
+      }
+    ]
+  },
+  {
+    "category": "food",
+    "section_title": "Food & Nutrition",
+    "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
+    "search_keywords": "huerto de la familia food security agriculture entrepreneurship latino lane county",
+    "name": "Huerto de la Familia",
+    "tags": [
+      {
+        "text": "Food Security",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Latino Community",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Increases food security and economic empowerment by providing resources in agriculture and entrepreneurship to Lane County Latinos. Operates community gardens and entrepreneurship training for families with great potential but limited access.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://huertofamilia.org",
+        "text": "huertofamilia.org"
+      }
+    ]
+  },
+  {
+    "category": "food",
+    "section_title": "Food & Nutrition",
+    "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
+    "search_keywords": "acorn cafe pay it forward free meals vegan eugene restaurant",
+    "name": "Acorn Café",
+    "tags": [
+      {
+        "text": "Pay-It-Forward",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Vegan",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Vegan café and community resource in Eugene. Features a pay-it-forward board with free meals pre-purchased by fellow patrons for anyone in need. No questions asked.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://eatacorncafe.com",
+        "text": "eatacorncafe.com"
+      },
+      {
+        "type": "text",
+        "text": "796 Monroe St, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "peacehealth sacred heart hospital emergency trauma eugene",
+    "name": "PeaceHealth Sacred Heart Medical Center",
+    "tags": [
+      {
+        "text": "Hospital",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Emergency Care",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      }
+    ],
+    "description": "The primary hospital system serving Lane County, with locations in Eugene (RiverBend and University District). Offers emergency care, trauma services, specialty medicine, and community health programs.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416861111",
+        "text": "541-686-1111"
+      },
+      {
+        "type": "link",
+        "href": "https://www.peacehealth.org",
+        "text": "peacehealth.org"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "lane county public health immunizations STI testing clinics community",
+    "name": "Lane County Public Health",
+    "tags": [
+      {
+        "text": "Public Health",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Low-Cost",
+        "class": [
+          "tag",
+          "free"
+        ]
+      }
+    ],
+    "description": "County public health services including immunizations, STI testing and treatment, family planning, WIC, environmental health, communicable disease investigation, and community health programs.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416823433",
+        "text": "541-682-3433"
+      },
+      {
+        "type": "link",
+        "href": "https://lanecountyor.gov/public-health",
+        "text": "lanecountyor.gov"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "hiv alliance testing prevention education needle exchange hepatitis C",
+    "name": "HIV Alliance",
+    "tags": [
+      {
+        "text": "Free Testing",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Harm Reduction",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Formed in Eugene in 1994 to support individuals living with HIV/AIDS and prevent new infections. Offers free and confidential HIV, Hepatitis C, and STI testing, needle exchange, behavioral health services, and community education.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://hivalliance.org",
+        "text": "hivalliance.org"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "willamette family addiction recovery substance use counseling treatment",
+    "name": "Willamette Family",
+    "tags": [
+      {
+        "text": "Addiction Recovery",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Mental Health",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Lane County's largest addiction and mental health treatment organization. Provides outpatient and residential substance use treatment, mental health counseling, family services, and housing support for people in recovery.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413434277",
+        "text": "541-343-4277"
+      },
+      {
+        "type": "link",
+        "href": "https://wfts.org",
+        "text": "wfts.org"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "serenity lane alcohol drug treatment recovery outpatient",
+    "name": "Serenity Lane",
+    "tags": [
+      {
+        "text": "Addiction Recovery",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides a healing environment for chemically dependent individuals and their families to discover enhanced quality of life through long-term recovery. Offers outpatient treatment for addiction, mental health, and problem gambling including individual, family, and group therapy.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5414857870",
+        "text": "541-485-7870"
+      },
+      {
+        "type": "link",
+        "href": "https://serenitylane.org",
+        "text": "serenitylane.org"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "options counseling family services mental health children families oregon",
+    "name": "Options Counseling and Family Services",
+    "tags": [
+      {
+        "text": "Mental Health",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Family Services",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides quality, cost-effective mental health and family preservation services to children and families of Oregon since 1991. Services include in-home counseling, crisis intervention, and intensive family support.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://options.org",
+        "text": "options.org"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "transition health trans queer transgender gender affirming healthcare",
+    "name": "Transition Health",
+    "tags": [
+      {
+        "text": "Trans Healthcare",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "LGBTQ+",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides compassionate, evidence-based healthcare and education for trans and queer communities. Committed to advocacy and accessible services; a leader in inclusive, affirming, patient-centered care in Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413577594",
+        "text": "541-357-7594"
+      },
+      {
+        "type": "link",
+        "href": "https://transition.health",
+        "text": "transition.health"
+      },
+      {
+        "type": "text",
+        "text": "1590 Willamette St, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "planned parenthood reproductive health family planning contraception STI",
+    "name": "Planned Parenthood — SW Oregon",
+    "tags": [
+      {
+        "text": "Reproductive Health",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides reproductive health services including family planning, contraception, STI testing and treatment, cancer screenings, and education. Sliding-scale fees available; no one turned away for inability to pay.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413444696",
+        "text": "541-344-4696"
+      },
+      {
+        "type": "link",
+        "href": "https://www.plannedparenthood.org/health-center/oregon/eugene",
+        "text": "plannedparenthood.org"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "trauma healing project PTSD therapy counseling survivors",
+    "name": "Trauma Healing Project",
+    "tags": [
+      {
+        "text": "Trauma",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Counseling",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Delivers healing and hope to traumatized children and their families, and enhances the physical, emotional, and spiritual health of its clients. Offers trauma-informed therapy and body-based healing modalities.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://traumahealingproject.org",
+        "text": "traumahealingproject.org"
+      }
+    ]
+  },
+  {
+    "category": "health",
+    "section_title": "Health & Mental Health",
+    "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
+    "search_keywords": "laurel hill center psychiatric disability self-reliance community living",
+    "name": "Laurel Hill Center",
+    "tags": [
+      {
+        "text": "Mental Health",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Disability",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Committed to helping people with psychiatric disabilities make choices and acquire skills that increase self-reliance and the ability to live and work in the community. Offers vocational and psychosocial rehabilitation.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413432611",
+        "text": "541-343-2611"
+      },
+      {
+        "type": "link",
+        "href": "https://laurelhill.org",
+        "text": "laurelhill.org"
+      }
+    ]
+  },
+  {
+    "category": "youth",
+    "section_title": "Children, Youth & Families",
+    "section_desc": "Early childhood, parenting support, after-school programs, and youth development",
+    "search_keywords": "head start early childhood education low-income preschool federally funded",
+    "name": "Head Start of Lane County",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Early Childhood",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Promotes school readiness for low-income children through federally funded Early Head Start and Head Start programs. Provides early education, health screenings, nutrition, and family support services.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5414654800",
+        "text": "541-465-4800"
+      },
+      {
+        "type": "link",
+        "href": "https://headstartlc.org",
+        "text": "headstartlc.org"
+      }
+    ]
+  },
+  {
+    "category": "youth",
+    "section_title": "Children, Youth & Families",
+    "section_desc": "Early childhood, parenting support, after-school programs, and youth development",
+    "search_keywords": "relief nursery family support abuse prevention early childhood trauma",
+    "name": "Relief Nursery",
+    "tags": [
+      {
+        "text": "Family Support",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Prevention",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides family support services to prevent child abuse and neglect. Serves families with young children at risk for abuse, offering therapeutic childcare, home visits, parent education, and crisis support.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416876108",
+        "text": "541-687-6108"
+      },
+      {
+        "type": "link",
+        "href": "https://reliefnursery.org",
+        "text": "reliefnursery.org"
+      }
+    ]
+  },
+  {
+    "category": "youth",
+    "section_title": "Children, Youth & Families",
+    "section_desc": "Early childhood, parenting support, after-school programs, and youth development",
+    "search_keywords": "looking glass community services youth counseling residential treatment vocation",
+    "name": "Looking Glass Community Services",
+    "tags": [
+      {
+        "text": "Youth Services",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Counseling",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides counseling, residential treatment, education and vocational training, shelter, and case management to at-risk children, youth, and adults in Lane County. A cornerstone of Lane County youth services since 1970.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416896111",
+        "text": "541-689-6111"
+      },
+      {
+        "type": "link",
+        "href": "https://lookingglass.us",
+        "text": "lookingglass.us"
+      }
+    ]
+  },
+  {
+    "category": "youth",
+    "section_title": "Children, Youth & Families",
+    "section_desc": "Early childhood, parenting support, after-school programs, and youth development",
+    "search_keywords": "friends of the children long-term mentoring youth poverty lane county",
+    "name": "Friends of the Children — Lane County",
+    "tags": [
+      {
+        "text": "Mentoring",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Long-Term",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides long-term, paid professional mentors to children facing the greatest obstacles — beginning in kindergarten through high school graduation. Commits to each child regardless of circumstance.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://friendsofthechildren.org/lane-county",
+        "text": "friendsofthechildren.org"
+      }
+    ]
+  },
+  {
+    "category": "youth",
+    "section_title": "Children, Youth & Families",
+    "section_desc": "Early childhood, parenting support, after-school programs, and youth development",
+    "search_keywords": "YMCA youth development after school summer camp health wellness",
+    "name": "Eugene Family YMCA",
+    "tags": [
+      {
+        "text": "Youth",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Wellness",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Fosters community through diverse programs focused on youth development, health, and social responsibility. Operates after-school care for ages 4–12 across 12 schools, summer programs, fitness, and aquatics. Scholarships available.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413454957",
+        "text": "541-345-4957"
+      },
+      {
+        "type": "link",
+        "href": "https://eugeneymca.org",
+        "text": "eugeneymca.org"
+      }
+    ]
+  },
+  {
+    "category": "youth",
+    "section_title": "Children, Youth & Families",
+    "section_desc": "Early childhood, parenting support, after-school programs, and youth development",
+    "search_keywords": "parenting now education support families parent skills",
+    "name": "ParentingNow",
+    "tags": [
+      {
+        "text": "Parenting",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Education",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides parenting education and support to strengthen families and nurture child development. Offers free classes, workshops, and resources for parents and caregivers of young children across Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://parentingnow.org",
+        "text": "parentingnow.org"
+      }
+    ]
+  },
+  {
+    "category": "youth",
+    "section_title": "Children, Youth & Families",
+    "section_desc": "Early childhood, parenting support, after-school programs, and youth development",
+    "search_keywords": "CORE community outreach empowerment young people homelessness poverty youth",
+    "name": "CORE (Community Outreach Through Radical Empowerment)",
+    "tags": [
+      {
+        "text": "Youth Outreach",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Supports, empowers, and advocates for young people in Lane County surviving the effects of poverty, homelessness, or other adversities. Provides drop-in services, outreach, and peer support.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Eugene, OR"
+      }
+    ]
+  },
+  {
+    "category": "youth",
+    "section_title": "Children, Youth & Families",
+    "section_desc": "Early childhood, parenting support, after-school programs, and youth development",
+    "search_keywords": "arc lane county developmental disabilities children intensive in-home services dignity",
+    "name": "Arc of Lane County",
+    "tags": [
+      {
+        "text": "Developmental Disabilities",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Advocacy",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Advocates for individuals with developmental disabilities, providing children's intensive in-home services to enhance dignity and expand opportunities. Supports families navigating the disability service system.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413431225",
+        "text": "541-343-1225"
+      },
+      {
+        "type": "link",
+        "href": "https://arclc.org",
+        "text": "arclc.org"
+      }
+    ]
+  },
+  {
+    "category": "seniors",
+    "section_title": "Seniors & Older Adults",
+    "section_desc": "Transportation, meals, in-home support, and aging services",
+    "search_keywords": "senior disabled services lane council of governments LCOG transportation meals",
+    "name": "Senior & Disability Services (Lane Council of Governments)",
+    "tags": [
+      {
+        "text": "In-Home Support",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Meals",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides a full range of services to help older adults and people with disabilities live independently, including in-home care, Meals on Wheels, caregiver support, and connection to community resources throughout Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416825560",
+        "text": "541-682-5560"
+      },
+      {
+        "type": "link",
+        "href": "https://www.lcog.org/sds",
+        "text": "lcog.org/sds"
+      }
+    ]
+  },
+  {
+    "category": "seniors",
+    "section_title": "Seniors & Older Adults",
+    "section_desc": "Transportation, meals, in-home support, and aging services",
+    "search_keywords": "aging disability resource connection ADRC oregon services navigation",
+    "name": "Aging and Disability Resource Connection of Oregon (ADRC)",
+    "tags": [
+      {
+        "text": "Navigation",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Seniors",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Disability",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Statewide \"no wrong door\" system helping older adults and people with disabilities navigate long-term services and supports. Provides information, referrals, and assistance choosing between community and facility-based care.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:18005251494",
+        "text": "1-800-525-1494"
+      },
+      {
+        "type": "link",
+        "href": "https://adrcoforegon.org",
+        "text": "adrcoforegon.org"
+      }
+    ]
+  },
+  {
+    "category": "seniors",
+    "section_title": "Seniors & Older Adults",
+    "section_desc": "Transportation, meals, in-home support, and aging services",
+    "search_keywords": "ridesource LTD paratransit ADA disability transportation bus",
+    "name": "RideSource / LTD Point2Point",
+    "tags": [
+      {
+        "text": "Transportation",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "ADA",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Origin-to-destination ADA paratransit service for people unable to use the fixed-route bus due to a disability. Operates within the Eugene/Springfield metropolitan area. LTD Point2Point also provides county-wide accessible transit connections.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416825000",
+        "text": "541-682-5000"
+      },
+      {
+        "type": "link",
+        "href": "https://www.ltd.org",
+        "text": "ltd.org"
+      }
+    ]
+  },
+  {
+    "category": "seniors",
+    "section_title": "Seniors & Older Adults",
+    "section_desc": "Transportation, meals, in-home support, and aging services",
+    "search_keywords": "oregon supported living program OSLP adults developmental disabilities community",
+    "name": "Oregon Supported Living Program (OSLP)",
+    "tags": [
+      {
+        "text": "Developmental Disabilities",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Adults",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides supported living and community integration services to adults with intellectual and developmental disabilities in Lane County. Supports individuals in living independently with personalized care plans.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413430938",
+        "text": "541-343-0938"
+      },
+      {
+        "type": "link",
+        "href": "https://oslp.org",
+        "text": "oslp.org"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "pearl buck center intellectual developmental disabilities children adults",
+    "name": "Pearl Buck Center",
+    "tags": [
+      {
+        "text": "Intellectual Disabilities",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Employment",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Supports children and adults with intellectual and developmental disabilities. Provides early intervention, employment services, day programs, and residential support to help individuals live meaningful lives.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413438336",
+        "text": "541-343-8336"
+      },
+      {
+        "type": "link",
+        "href": "https://pearlbuckcenter.com",
+        "text": "pearlbuckcenter.com"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "full access independent living equal access community inclusion",
+    "name": "Full Access",
+    "tags": [
+      {
+        "text": "Independent Living",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Advocacy",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Envisions a world where equal access ensures all people live, work, and recreate in their community consistent with their preferences and choices. Provides independent living services, advocacy, and peer support for people with disabilities.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413438595",
+        "text": "541-343-8595"
+      },
+      {
+        "type": "link",
+        "href": "https://fullaccess.org",
+        "text": "fullaccess.org"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "direction service counseling children youth families mental health disability",
+    "name": "Direction Service",
+    "tags": [
+      {
+        "text": "Mental Health",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Developmental Disabilities",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "The Direction Service Counseling Center provides a full range of mental health services to very young children, children, adolescents, families, and adults. Also provides coordination for developmental disability services.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413438595",
+        "text": "541-343-8595"
+      },
+      {
+        "type": "link",
+        "href": "https://directionservice.org",
+        "text": "directionservice.org"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "allies llc developmental disability services intellectual disabilities adults eugene",
+    "name": "Allies, LLC",
+    "tags": [
+      {
+        "text": "Developmental Disabilities",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Adult Services",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Empowers adults experiencing intellectual and developmental disabilities by providing exceptional support services, meaningful classes, social opportunities, and a safe environment to thrive. Offers day programs, community activities, and skill-building workshops.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416823695",
+        "text": "541-682-3695"
+      },
+      {
+        "type": "link",
+        "href": "https://allies-llc.org",
+        "text": "allies-llc.org"
+      },
+      {
+        "type": "text",
+        "text": "2513 Martin St, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "oslp oregon supported living program developmental disabilities independent living",
+    "name": "Oregon Supported Living Program (OSLP)",
+    "tags": [
+      {
+        "text": "Supported Living",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Community Integration",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Celebrating over 40 years of service to adults with intellectual and developmental disabilities in Eugene and Springfield. Provides person-centered support for independent living, encouraging personal choice, independence, and progress toward self-determined goals through community integration.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413434196",
+        "text": "541-343-4196"
+      },
+      {
+        "type": "link",
+        "href": "https://oslp.org",
+        "text": "oslp.org"
+      },
+      {
+        "type": "text",
+        "text": "412 Pearl St, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "lila lane independent living alliance cross-disability advocacy peer counseling",
+    "name": "Lane Independent Living Alliance (LILA)",
+    "tags": [
+      {
+        "text": "Independent Living",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Cross-Disability",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "A cross-disability, consumer-driven organization helping people with disabilities achieve choice, access, inclusion, and independence. Offers five core services: information & referral, independent living skills training, peer counseling, advocacy, and transition to independent living.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413438196",
+        "text": "541-343-8196"
+      },
+      {
+        "type": "link",
+        "href": "https://lilaoregon.org",
+        "text": "lilaoregon.org"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "arc lane county developmental disabilities advocacy employment family support",
+    "name": "Arc of Lane County",
+    "tags": [
+      {
+        "text": "Advocacy",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Family Support",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides comprehensive support for individuals with intellectual and developmental disabilities, from inclusive preschool through adult employment services. Offers extensive family support programs, community advocacy, and helps adults strengthen life skills for more fulfilling and independent lives.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413435256",
+        "text": "541-343-5256"
+      },
+      {
+        "type": "link",
+        "href": "https://arclane.org",
+        "text": "arclane.org"
+      },
+      {
+        "type": "text",
+        "text": "4181 E St, Springfield"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "lane county developmental disabilities services intellectual developmental county government",
+    "name": "Lane County Developmental Disabilities Services",
+    "tags": [
+      {
+        "text": "County Services",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Government",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "County agency providing individualized support for adults and children with intellectual and/or developmental disabilities. Coordinates services, provides case management, and connects individuals with community resources. The primary point of contact for accessing publicly funded disability services in Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416823695",
+        "text": "541-682-3695"
+      },
+      {
+        "type": "link",
+        "href": "https://lanecountyor.gov/developmentaldisabilities",
+        "text": "lanecountyor.gov/developmentaldisabilities"
+      },
+      {
+        "type": "text",
+        "text": "2411 Martin Luther King Jr Blvd, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "adrc aging disability resource connection senior disability services lane county",
+    "name": "Aging & Disability Resource Connection (ADRC)",
+    "tags": [
+      {
+        "text": "Information & Referral",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Senior Services",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "A single point of entry for information and assistance with aging and disability services in Lane County. Helps individuals and families navigate available resources, apply for services, and connect with appropriate programs for seniors and people with disabilities.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416823353",
+        "text": "541-682-3353"
+      },
+      {
+        "type": "link",
+        "href": "https://lcog-or.gov/sdslane/page/aging-disability-resource-connection-adrc",
+        "text": "lcog-or.gov/sdslane/adrc"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "rise services developmental disabilities in-home care supported living employment",
+    "name": "RISE Services, Inc.",
+    "tags": [
+      {
+        "text": "Developmental Disabilities",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "In-Home Care",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Supported Living",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides comprehensive developmental disability support services including in-home care, community services, supported living, and employment support for children and adults with intellectual and developmental disabilities. Offers personalized services to help individuals live independently in their communities.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5412463697",
+        "text": "541‑246‑3697"
+      },
+      {
+        "type": "link",
+        "href": "https://riseservicesinc.org",
+        "text": "riseservicesinc.org"
+      },
+      {
+        "type": "text",
+        "text": "1500 Valley River Dr, Ste 270, Eugene, OR 97401"
+      }
+    ]
+  },
+  {
+    "category": "disability",
+    "section_title": "Disability Services",
+    "section_desc": "Support, advocacy, and services for people with disabilities",
+    "search_keywords": "senior disability services lane council of governments lcog meals on wheels caregiver support",
+    "name": "Senior & Disability Services (Lane Council of Governments)",
+    "tags": [
+      {
+        "text": "Senior Services",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Disability Services",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Government",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Program information and eligibility determination for seniors and adults with disabilities. Offers Senior Connections, Meals on Wheels, Family Caregiver support, long‑term care planning, Oregon Health Plan/Medicaid eligibility, SNAP, and transportation resources. A comprehensive resource for aging and disability services in Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416823353",
+        "text": "541‑682‑3353"
+      },
+      {
+        "type": "link",
+        "href": "https://lcog-or.gov/sdslane",
+        "text": "lcog‑or.gov/sdslane"
+      },
+      {
+        "type": "text",
+        "text": "1015 Willamette St, Eugene, OR 97401"
+      }
+    ]
+  },
+  {
+    "category": "lgbtq",
+    "section_title": "LGBTQ+ Resources",
+    "section_desc": "Affirming services, community spaces, advocacy, and support for LGBTQ+ residents",
+    "search_keywords": "transponder transgender non-binary gender diverse nonprofit support education eugene",
+    "name": "TransPonder",
+    "tags": [
+      {
+        "text": "Trans-Led",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Support",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "A transgender founded and led nonprofit in Eugene providing support, resources, and education for the trans/gender-diverse community and allies. Offers support groups, resource navigation, training, and community events.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://transponder.community",
+        "text": "transponder.community"
+      }
+    ]
+  },
+  {
+    "category": "lgbtq",
+    "section_title": "LGBTQ+ Resources",
+    "section_desc": "Affirming services, community spaces, advocacy, and support for LGBTQ+ residents",
+    "search_keywords": "queer eugene organizing support resources community oregon",
+    "name": "Queer Eugene",
+    "tags": [
+      {
+        "text": "Advocacy",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Community",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Organizes support, resources, and community for queer folks in Oregon. Provides a hub for LGBTQ+ events, activism, mutual aid, and community connection in the Eugene-Springfield area.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://queereugene.org",
+        "text": "queereugene.org"
+      }
+    ]
+  },
+  {
+    "category": "lgbtq",
+    "section_title": "LGBTQ+ Resources",
+    "section_desc": "Affirming services, community spaces, advocacy, and support for LGBTQ+ residents",
+    "search_keywords": "youth era lgbtq homeless youth services housing",
+    "name": "Youth ERA Eugene",
+    "tags": [
+      {
+        "text": "Youth",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "LGBTQ+",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides services and support for LGBTQ+ youth, including housing assistance, case management, and community programs for young people who are homeless or at risk. Youth-run and youth-centered.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://youthera.org",
+        "text": "youthera.org"
+      }
+    ]
+  },
+  {
+    "category": "lgbtq",
+    "section_title": "LGBTQ+ Resources",
+    "section_desc": "Affirming services, community spaces, advocacy, and support for LGBTQ+ residents",
+    "search_keywords": "eugene pride festival annual LGBTQ summer event lane events center",
+    "name": "Eugene Pride Festival",
+    "tags": [
+      {
+        "text": "Annual Event",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Community",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Annual LGBTQ+ Pride festival organized by dedicated community volunteers, celebrating and affirming LGBTQ+ lives in Lane County. Features entertainment, vendors, community organizations, and family-friendly activities.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://eugenepride.org",
+        "text": "eugenepride.org"
+      }
+    ]
+  },
+  {
+    "category": "lgbtq",
+    "section_title": "LGBTQ+ Resources",
+    "section_desc": "Affirming services, community spaces, advocacy, and support for LGBTQ+ residents",
+    "search_keywords": "lavender network lesbian gay bisexual transgender community services",
+    "name": "The Lavender Network",
+    "tags": [
+      {
+        "text": "LGBTQ+",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Community",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Works to provide a safe space for LGBTQ+ folks and their allies, promote equity in the community, and uplift the voices of LGBTQ+ members. Provides educational opportunities and community organizing support.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Eugene, OR"
+      }
+    ]
+  },
+  {
+    "category": "legal",
+    "section_title": "Legal, Advocacy & Civil Rights",
+    "section_desc": "Legal aid, civil liberties, social justice, and community organizing",
+    "search_keywords": "civil liberties defense center CLDC legal rights environmental social justice",
+    "name": "Civil Liberties Defense Center (CLDC)",
+    "tags": [
+      {
+        "text": "Civil Liberties",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Legal Defense",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides legal support to activists and social justice movements. Defends civil liberties through litigation, education, and organizing support — particularly for environmental and social justice causes.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416879180",
+        "text": "541-687-9180"
+      },
+      {
+        "type": "link",
+        "href": "https://cldc.org",
+        "text": "CLDC.org"
+      },
+      {
+        "type": "text",
+        "text": "1711 Willamette St, Suite 301, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "legal",
+    "section_title": "Legal, Advocacy & Civil Rights",
+    "section_desc": "Legal aid, civil liberties, social justice, and community organizing",
+    "search_keywords": "NAACP 1119 eugene springfield branch civil rights equality education voting",
+    "name": "NAACP Eugene-Springfield Branch #1119",
+    "tags": [
+      {
+        "text": "Civil Rights",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Advocacy",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Works for equality in education, economics, legal redistricting, and voting rights in Lane County. The Eugene branch was founded in 1976 and plays a leadership role both locally and statewide in civil rights advocacy.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://naacpeugene.org",
+        "text": "naacpeugene.org"
+      }
+    ]
+  },
+  {
+    "category": "legal",
+    "section_title": "Legal, Advocacy & Civil Rights",
+    "section_desc": "Legal aid, civil liberties, social justice, and community organizing",
+    "search_keywords": "community alliance lane county CALC peace justice education 1966",
+    "name": "Community Alliance of Lane County (CALC)",
+    "tags": [
+      {
+        "text": "Peace & Justice",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Education",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Working since 1966 to create a more just and peaceful community. Collaborates with organizations, institutions, and individuals to address root causes of oppression through education, activism, and cultural means.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://calclane.org",
+        "text": "calclane.org"
+      }
+    ]
+  },
+  {
+    "category": "legal",
+    "section_title": "Legal, Advocacy & Civil Rights",
+    "section_desc": "Legal aid, civil liberties, social justice, and community organizing",
+    "search_keywords": "public defender services lane county indigent legal defense nonprofit",
+    "name": "Public Defender Services of Lane County",
+    "tags": [
+      {
+        "text": "Legal Defense",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      }
+    ],
+    "description": "Provides legal defense services to indigent individuals facing criminal charges in Lane County. A nonprofit organization ensuring equal access to justice regardless of ability to pay.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416823480",
+        "text": "541-682-3480"
+      }
+    ]
+  },
+  {
+    "category": "legal",
+    "section_title": "Legal, Advocacy & Civil Rights",
+    "section_desc": "Legal aid, civil liberties, social justice, and community organizing",
+    "search_keywords": "safer springfield social justice human rights shelter rights peaceful responses",
+    "name": "SAfER (Social Action for Equity and Rights)",
+    "tags": [
+      {
+        "text": "Human Rights",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Springfield",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "A social justice group supporting human rights in Springfield. Programs include Shelter Rights, Progressive Responses (action for peaceful tomorrows), and Back to Back (Allies for Human Dignity).",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Springfield, OR"
+      }
+    ]
+  },
+  {
+    "category": "legal",
+    "section_title": "Legal, Advocacy & Civil Rights",
+    "section_desc": "Legal aid, civil liberties, social justice, and community organizing",
+    "search_keywords": "oregon worker relief immigrant economic hardship financial assistance",
+    "name": "Oregon Worker Relief",
+    "tags": [
+      {
+        "text": "Immigrant Services",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Financial Aid",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Helps Oregonian immigrants in need experiencing economic hardship who are facing an immigration system that disadvantages them. Provides emergency financial assistance and navigates access to support services.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:18882747292",
+        "text": "1-888-274-7292"
+      },
+      {
+        "type": "link",
+        "href": "https://workerrelief.org",
+        "text": "workerrelief.org"
+      }
+    ]
+  },
+  {
+    "category": "legal",
+    "section_title": "Legal, Advocacy & Civil Rights",
+    "section_desc": "Legal aid, civil liberties, social justice, and community organizing",
+    "search_keywords": "rural organizing project volunteer oregon groups support communities issue",
+    "name": "Rural Organizing Project",
+    "tags": [
+      {
+        "text": "Statewide",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Community Organizing",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Volunteer-run statewide organization with over 91 groups across rural Oregon. Builds communities with specific issue resources to support groups and individuals who need help. Active in Cottage Grove and throughout Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5035438417",
+        "text": "503-543-8417"
+      },
+      {
+        "type": "link",
+        "href": "https://rop.org",
+        "text": "rop.org"
+      }
+    ]
+  },
+  {
+    "category": "employment",
+    "section_title": "Employment & Job Training",
+    "section_desc": "Workforce development, vocational training, and barriers-to-employment support",
+    "search_keywords": "goodwill industries lane south coast vocational rehabilitation employment barriers",
+    "name": "Goodwill Industries of Lane & South Coast Counties",
+    "tags": [
+      {
+        "text": "Job Training",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Vocational Rehab",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "A mission-integrated, enterprise-funded organization providing services to individuals with barriers to employment. Offers vocational assessment, skills training, job placement support, and community employment programs across Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413436656",
+        "text": "541-343-6656"
+      },
+      {
+        "type": "link",
+        "href": "https://www.goodwill-lane.org",
+        "text": "goodwill-lane.org"
+      }
+    ]
+  },
+  {
+    "category": "employment",
+    "section_title": "Employment & Job Training",
+    "section_desc": "Workforce development, vocational training, and barriers-to-employment support",
+    "search_keywords": "worksource oregon lane county employment job search career center unemployment",
+    "name": "WorkSource Oregon — Lane County",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Job Search",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Oregon's primary workforce development system. Provides free employment services including job search assistance, career counseling, skills training, résumé help, and connections to education and employment programs.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416829000",
+        "text": "541-682-9000"
+      },
+      {
+        "type": "link",
+        "href": "https://worksourceoregon.org",
+        "text": "worksourceoregon.org"
+      }
+    ]
+  },
+  {
+    "category": "employment",
+    "section_title": "Employment & Job Training",
+    "section_desc": "Workforce development, vocational training, and barriers-to-employment support",
+    "search_keywords": "northwest youth corps conservation youth corps job training outdoor",
+    "name": "Northwest Youth Corps",
+    "tags": [
+      {
+        "text": "Youth",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Conservation Jobs",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides youth employment and education through conservation work. Offers residential and non-residential programs for young people ages 15–25, combining environmental stewardship with workforce development and life skills.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413493356",
+        "text": "541-349-3356"
+      },
+      {
+        "type": "link",
+        "href": "https://nwyouthcorps.org",
+        "text": "nwyouthcorps.org"
+      }
+    ]
+  },
+  {
+    "category": "multicultural",
+    "section_title": "Multicultural & Immigrant Services",
+    "section_desc": "Language access, cultural community, and immigrant support",
+    "search_keywords": "downtown languages english ESL citizenship computer literacy adult education immigrants",
+    "name": "Downtown Languages",
+    "tags": [
+      {
+        "text": "ESL",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Immigrant Services",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Provides educational resources to immigrants and works to create a respected community and safe space. Programs include English language classes, U.S. citizenship preparation, computer literacy, and basic adult education.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://downtownlanguages.org",
+        "text": "downtownlanguages.org"
+      }
+    ]
+  },
+  {
+    "category": "multicultural",
+    "section_title": "Multicultural & Immigrant Services",
+    "section_desc": "Language access, cultural community, and immigrant support",
+    "search_keywords": "eugene springfield asian council friendship culture events asian american pacific islander",
+    "name": "Eugene/Springfield Asian Council",
+    "tags": [
+      {
+        "text": "Asian Pacific",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Cultural Events",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Creates opportunities that foster friendship and harmonious relations among all people by presenting events and activities that stimulate understanding of Asian and Asian-American cultures in Lane County.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Eugene, OR"
+      }
+    ]
+  },
+  {
+    "category": "multicultural",
+    "section_title": "Multicultural & Immigrant Services",
+    "section_desc": "Language access, cultural community, and immigrant support",
+    "search_keywords": "holt international children adoption global poverty orphan",
+    "name": "Holt International Children's Services",
+    "tags": [
+      {
+        "text": "Child Welfare",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Global",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Works toward a world where every child has a loving and secure home. Provides international adoption services, family preservation programs, and orphan care. Headquartered in Eugene with global reach.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413464000",
+        "text": "541-346-4000"
+      },
+      {
+        "type": "link",
+        "href": "https://holtinternational.org",
+        "text": "holtinternational.org"
+      }
+    ]
+  },
+  {
+    "category": "multicultural",
+    "section_title": "Multicultural & Immigrant Services",
+    "section_desc": "Language access, cultural community, and immigrant support",
+    "search_keywords": "center for family development CFD diverse families strengths community participation",
+    "name": "Center for Family Development (CFD)",
+    "tags": [
+      {
+        "text": "Family Support",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Multicultural",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Joins respectfully with diverse individuals and families to identify and access their strengths and resources to enhance their lives and participation in the community. Serves immigrant and culturally diverse families in Lane County.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Eugene, OR"
+      }
+    ]
+  },
+  {
+    "category": "education",
+    "section_title": "Education & Libraries",
+    "section_desc": "Public libraries, tutoring, literacy, and higher education resources",
+    "search_keywords": "eugene public library books resources community programs children teen adult",
+    "name": "Eugene Public Library",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Community Hub",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Free public library system with multiple branches. Offers books, digital resources, computer access, free tax help, social services resource guides, programming for all ages, and meeting spaces for community groups.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416824636",
+        "text": "541-682-4636"
+      },
+      {
+        "type": "link",
+        "href": "https://eugene.libguides.com/localservices",
+        "text": "eugene.libguides.com"
+      },
+      {
+        "type": "text",
+        "text": "100 W 10th Ave, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "education",
+    "section_title": "Education & Libraries",
+    "section_desc": "Public libraries, tutoring, literacy, and higher education resources",
+    "search_keywords": "springfield public library books programs community",
+    "name": "Springfield Public Library",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Community Hub",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Serves Springfield residents with free access to books, digital resources, internet access, community programs, children's storytime, teen activities, and adult literacy support.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5417265254",
+        "text": "541-726-5254"
+      },
+      {
+        "type": "link",
+        "href": "https://thespringfieldlibrary.org",
+        "text": "thespringfieldlibrary.org"
+      },
+      {
+        "type": "text",
+        "text": "225 5th St, Springfield"
+      }
+    ]
+  },
+  {
+    "category": "education",
+    "section_title": "Education & Libraries",
+    "section_desc": "Public libraries, tutoring, literacy, and higher education resources",
+    "search_keywords": "lane community college LCC adult education GED workforce training affordable",
+    "name": "Lane Community College (LCC)",
+    "tags": [
+      {
+        "text": "Higher Ed",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Workforce Training",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Offers affordable associate degrees, vocational certificates, GED/adult basic education, workforce development, ESL, and transfer programs. Financial aid and scholarships available. Multiple campuses including Eugene and Springfield sites.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5417478100",
+        "text": "541-747-8100"
+      },
+      {
+        "type": "link",
+        "href": "https://lanecc.edu",
+        "text": "lanecc.edu"
+      }
+    ]
+  },
+  {
+    "category": "education",
+    "section_title": "Education & Libraries",
+    "section_desc": "Public libraries, tutoring, literacy, and higher education resources",
+    "search_keywords": "211info community resources directory referral services oregon southwest washington",
+    "name": "211info Oregon",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "24/7",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      }
+    ],
+    "description": "Empowers Oregon and SW Washington communities by helping people identify, navigate, and connect with local resources. Comprehensive searchable database of health, human, and social services.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:211",
+        "text": "2-1-1"
+      },
+      {
+        "type": "link",
+        "href": "https://211info.org",
+        "text": "211info.org"
+      }
+    ]
+  },
+  {
+    "category": "environment",
+    "section_title": "Environment & Conservation",
+    "section_desc": "Land protection, habitat restoration, and environmental stewardship",
+    "search_keywords": "mckenzie river trust land conservation easements habitat restoration western oregon",
+    "name": "McKenzie River Trust",
+    "tags": [
+      {
+        "text": "Land Conservation",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Restoration",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Acquires and manages land and conservation easements, restores habitats, and conducts public outreach in western Oregon. Protects some of the most ecologically significant lands along the McKenzie and Willamette rivers.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413453803",
+        "text": "541-345-3803"
+      },
+      {
+        "type": "link",
+        "href": "https://mckenzieriver.org",
+        "text": "mckenzieriver.org"
+      }
+    ]
+  },
+  {
+    "category": "environment",
+    "section_title": "Environment & Conservation",
+    "section_desc": "Land protection, habitat restoration, and environmental stewardship",
+    "search_keywords": "willamette riverkeeper water quality advocacy stewardship willamette river",
+    "name": "Willamette Riverkeeper",
+    "tags": [
+      {
+        "text": "Water Quality",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Advocacy",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Advocates for clean water, healthy habitat, and public access along the Willamette River. Conducts water quality monitoring, pollution accountability, and community education to protect this vital waterway.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "https://willametteriverkeeper.org",
+        "text": "willametteriverkeeper.org"
+      }
+    ]
+  },
+  {
+    "category": "environment",
+    "section_title": "Environment & Conservation",
+    "section_desc": "Land protection, habitat restoration, and environmental stewardship",
+    "search_keywords": "zero waste eugene recycling sustainability composting environment",
+    "name": "City of Eugene Sustainability Office",
+    "tags": [
+      {
+        "text": "Sustainability",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "City Services",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Leads Eugene's sustainability programs including climate action planning, energy efficiency, zero waste initiatives, composting programs, and resources for residents and businesses to reduce their environmental impact.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416824428",
+        "text": "541-682-4428"
+      },
+      {
+        "type": "link",
+        "href": "https://eugene-or.gov/sustainability",
+        "text": "eugene-or.gov/sustainability"
+      }
+    ]
+  },
+  {
+    "category": "arts",
+    "section_title": "Arts, Culture & Events",
+    "section_desc": "Arts organizations, cultural events, and creative community resources",
+    "search_keywords": "oregon country fair community festival art craft music gathering",
+    "name": "Oregon Country Fair",
+    "tags": [
+      {
+        "text": "Annual Festival",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Community",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Beloved annual fair celebrating arts, crafts, music, and community since 1969. Held in Veneta near Eugene each July. The Jill Heiman Vision Fund provides grants to organizations addressing food and housing insecurity in Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413434298",
+        "text": "541-343-4298"
+      },
+      {
+        "type": "link",
+        "href": "https://oregoncountryfair.org",
+        "text": "oregoncountryfair.org"
+      },
+      {
+        "type": "text",
+        "text": "442 Lawrence St, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "arts",
+    "section_title": "Arts, Culture & Events",
+    "section_desc": "Arts organizations, cultural events, and creative community resources",
+    "search_keywords": "lane arts council arts education programs grants community support",
+    "name": "Lane Arts Council",
+    "tags": [
+      {
+        "text": "Arts Grants",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Education",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Supports and promotes arts education and cultural programming throughout Lane County. Provides grants to artists and arts organizations, manages public art programs, and connects the community to creative resources.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413440080",
+        "text": "541-344-0080"
+      },
+      {
+        "type": "link",
+        "href": "https://lanearts.org",
+        "text": "lanearts.org"
+      }
+    ]
+  },
+  {
+    "category": "arts",
+    "section_title": "Arts, Culture & Events",
+    "section_desc": "Arts organizations, cultural events, and creative community resources",
+    "search_keywords": "hult center performing arts theater music symphony ballet eugene",
+    "name": "Hult Center for the Performing Arts",
+    "tags": [
+      {
+        "text": "Performing Arts",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Venue",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Eugene's premier performing arts venue hosting concerts, theatrical productions, dance, and community events. Home to the Eugene Symphony, Eugene Ballet, and many traveling national and international performers.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416827669",
+        "text": "541-682-5000"
+      },
+      {
+        "type": "link",
+        "href": "https://hultcenter.org",
+        "text": "hultcenter.org"
+      },
+      {
+        "type": "text",
+        "text": "1 Eugene Center, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "arts",
+    "section_title": "Arts, Culture & Events",
+    "section_desc": "Arts organizations, cultural events, and creative community resources",
+    "search_keywords": "jordan schnitzer museum art university oregon UO free",
+    "name": "Jordan Schnitzer Museum of Art (UO)",
+    "tags": [
+      {
+        "text": "Museum",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Free Admission",
+        "class": [
+          "tag",
+          "free"
+        ]
+      }
+    ],
+    "description": "University of Oregon's premier art museum featuring significant collections of Pacific Northwest, Asian, and American art. Free for UO students and community members on certain days. An important cultural anchor for Lane County.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413464480",
+        "text": "541-346-3027"
+      },
+      {
+        "type": "link",
+        "href": "https://jsma.uoregon.edu",
+        "text": "jsma.uoregon.edu"
+      },
+      {
+        "type": "text",
+        "text": "1430 Johnson Ln, University of Oregon"
+      }
+    ]
+  },
+  {
+    "category": "veterans",
+    "section_title": "Veterans Services",
+    "section_desc": "Benefits, support, and community for military veterans and their families",
+    "search_keywords": "lane county veterans service office benefits claims federal state assistance",
+    "name": "Lane County Veterans Service Office",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Benefits Help",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Connects veterans to their earned state and federal benefits. Provides claims assistance, discharge upgrade help, outreach, and advocacy for Lane County veterans and their families. Free accredited representation.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416823549",
+        "text": "541-682-3549"
+      },
+      {
+        "type": "link",
+        "href": "https://lanecountyor.gov/veterans",
+        "text": "lanecountyor.gov/veterans"
+      }
+    ]
+  },
+  {
+    "category": "veterans",
+    "section_title": "Veterans Services",
+    "section_desc": "Benefits, support, and community for military veterans and their families",
+    "search_keywords": "oregon department veterans affairs ODVA state benefits resources",
+    "name": "Oregon Department of Veterans' Affairs (ODVA)",
+    "tags": [
+      {
+        "text": "State Agency",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Benefits",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "State agency providing programs and services to maintain and enhance the quality of life for Oregon veterans, ensuring basic needs are met. Administers veteran home loans, education benefits, and additional state-specific programs.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:18006284557",
+        "text": "1-800-828-4557"
+      },
+      {
+        "type": "link",
+        "href": "https://oregon.gov/odva",
+        "text": "oregon.gov/odva"
+      }
+    ]
+  },
+  {
+    "category": "veterans",
+    "section_title": "Veterans Services",
+    "section_desc": "Benefits, support, and community for military veterans and their families",
+    "search_keywords": "veteran crisis line mental health suicide prevention 24/7 text call",
+    "name": "Veterans Crisis Line",
+    "tags": [
+      {
+        "text": "24/7",
+        "class": [
+          "tag",
+          "urgent"
+        ]
+      },
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      }
+    ],
+    "description": "Free, confidential crisis support for veterans, service members, and their families. Available by phone, text, or chat 24/7. Staffed by responders, many of whom are veterans themselves.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:988",
+        "text": "988 then press 1"
+      },
+      {
+        "type": "link",
+        "href": "https://veteranscrisisline.net",
+        "text": "veteranscrisisline.net"
+      }
+    ]
+  },
+  {
+    "category": "veterans",
+    "section_title": "Veterans Services",
+    "section_desc": "Benefits, support, and community for military veterans and their families",
+    "search_keywords": "UO student veterans center erb memorial union university oregon services",
+    "name": "UO Student Veterans Center",
+    "tags": [
+      {
+        "text": "Student Veterans",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Education",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Located in the Erb Memorial Union, provides study and meeting space, computer and printing stations, and dedicated staff to assist student veterans, dependents, and family members with personal and academic needs at the University of Oregon.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413465353",
+        "text": "541-346-5353"
+      },
+      {
+        "type": "text",
+        "text": "EMU, University of Oregon, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "faith",
+    "section_title": "Faith-Based Community Services",
+    "section_desc": "Faith communities providing social services, community meals, and mutual aid",
+    "search_keywords": "catholic community services lane county food housing rent energy ID phone",
+    "name": "Catholic Community Services (CCS)",
+    "tags": [
+      {
+        "text": "Emergency Aid",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Food",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Catholic agency in Oregon providing social services for low-income families: food boxes, clothing, phone access, housing information, rent assistance, energy assistance, and ID support. Serves Eugene and Springfield with warm, dignified service.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5413453628",
+        "text": "541-345-3628"
+      },
+      {
+        "type": "link",
+        "href": "https://ccslc.org",
+        "text": "ccslc.org"
+      }
+    ]
+  },
+  {
+    "category": "faith",
+    "section_title": "Faith-Based Community Services",
+    "section_desc": "Faith communities providing social services, community meals, and mutual aid",
+    "search_keywords": "interfaith coalition food pantry meal site spiritual community service eugene",
+    "name": "Eugene Ecumenical Ministries & Interfaith Coalitions",
+    "tags": [
+      {
+        "text": "Interfaith",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Community Service",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Network of Eugene and Springfield faith communities collaborating on social services, community meals, warming center sites, and mutual aid. Many congregations operate pantries, support Egan Warming Centers, and host community programs open to all.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Search 211info.org for faith-based programs near you"
+      }
+    ]
+  },
+  {
+    "category": "faith",
+    "section_title": "Faith-Based Community Services",
+    "section_desc": "Faith communities providing social services, community meals, and mutual aid",
+    "search_keywords": "first christian church community resource hub meals downtown eugene",
+    "name": "First Christian Church — Community Hub",
+    "tags": [
+      {
+        "text": "Meals",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Community Space",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Downtown Eugene congregation that hosts the Burrito Brigade meal prep on Sundays and serves as a hub for community gatherings and warming center shuttle pickup when Egan Warming Centers are activated.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "1144 Oak St, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "animals",
+    "section_title": "Animal Welfare",
+    "section_desc": "Shelters, adoption, and pet support resources",
+    "search_keywords": "greenhill humane society animal shelter adoption pets dogs cats eugene",
+    "name": "Greenhill Humane Society",
+    "tags": [
+      {
+        "text": "Animal Shelter",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Adoption",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Lane County's leading animal welfare organization. Provides shelter, care, and adoption services for cats, dogs, and other animals. Also offers low-cost vaccines, lost-pet reunification, foster programs, and community pet food assistance.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416893579",
+        "text": "541-689-3579"
+      },
+      {
+        "type": "link",
+        "href": "https://greenhill.org",
+        "text": "greenhill.org"
+      },
+      {
+        "type": "text",
+        "text": "88530 Green Hill Rd, Eugene"
+      }
+    ]
+  },
+  {
+    "category": "animals",
+    "section_title": "Animal Welfare",
+    "section_desc": "Shelters, adoption, and pet support resources",
+    "search_keywords": "lane county animal services lost found stray pets county shelter",
+    "name": "Lane County Animal Services",
+    "tags": [
+      {
+        "text": "County Services",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Lost & Found",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "County agency responsible for lost and found pets, stray animals, animal licensing, bite investigations, and enforcing animal control laws throughout Lane County. Works with rescue partners to rehome animals.",
+    "meta": [
+      {
+        "type": "link",
+        "href": "tel:5416825603",
+        "text": "541-682-3643"
+      },
+      {
+        "type": "link",
+        "href": "https://lanecountyor.gov/animal",
+        "text": "lanecountyor.gov/animal"
+      }
+    ]
+  },
+  {
+    "category": "essential",
+    "section_title": "Essential Services",
+    "section_desc": "Laundry, showers, haircuts, and other basic needs services",
+    "search_keywords": "hosea youth services free laundry homeless eugene",
+    "name": "Hosea Youth Services — Free Laundry",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Laundry",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Youth",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Free laundry services for youth and young adults experiencing homelessness. Walk‑in hours Monday, Wednesday, and Thursday evenings.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Mon, Wed, Thu 4:30pm–6:30pm"
+      },
+      {
+        "type": "text",
+        "text": "834 Monroe St, Eugene, OR 97402"
+      },
+      {
+        "type": "link",
+        "href": "tel:5413445583",
+        "text": "541‑344‑5583"
+      }
+    ]
+  },
+  {
+    "category": "essential",
+    "section_title": "Essential Services",
+    "section_desc": "Laundry, showers, haircuts, and other basic needs services",
+    "search_keywords": "eugene service station st vincent de paul showers laundry food clothing",
+    "name": "Eugene Service Station (St. Vincent de Paul)",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Multi‑Service",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Day Center",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Day center for adults experiencing homelessness. Provides showers, laundry, clothing, food, hygiene supplies, phone/computer access, mail service, and help with housing, jobs, and benefits.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Daily 8:00am–5:00pm"
+      },
+      {
+        "type": "text",
+        "text": "450 Hwy 99 N, Eugene, OR 97402"
+      },
+      {
+        "type": "link",
+        "href": "tel:5414618688",
+        "text": "541‑461‑8688"
+      }
+    ]
+  },
+  {
+    "category": "essential",
+    "section_title": "Essential Services",
+    "section_desc": "Laundry, showers, haircuts, and other basic needs services",
+    "search_keywords": "carry it forward wash shower services free showers homeless eugene",
+    "name": "Carry It Forward — Wash Shower Services",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Showers",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Hygiene",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Free, private shower facilities for individuals experiencing homelessness. Also provides hygiene kits and laundry services when available.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Monday 9:30am–4:30pm, Wednesday 4:30pm–6:30pm"
+      },
+      {
+        "type": "text",
+        "text": "525 Highway 99 N, Eugene, OR 97402"
+      },
+      {
+        "type": "link",
+        "href": "tel:5416540139",
+        "text": "541‑654‑0139"
+      }
+    ]
+  },
+  {
+    "category": "essential",
+    "section_title": "Essential Services",
+    "section_desc": "Laundry, showers, haircuts, and other basic needs services",
+    "search_keywords": "free haircuts unhoused eugene mission sheltercare",
+    "name": "Free Haircuts for Unhoused Individuals",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Haircuts",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Beard Trims",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Periodic free haircut and beard trim events for people experiencing homelessness. Offered by local barbers, Eugene Mission, and ShelterCare. Call ahead for schedule.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Varies; call for upcoming events"
+      },
+      {
+        "type": "text",
+        "text": "Multiple locations (Eugene Mission, ShelterCare, community centers)"
+      },
+      {
+        "type": "link",
+        "href": "tel:5413443251",
+        "text": "541‑344‑3251 (Eugene Mission)"
+      }
+    ]
+  },
+  {
+    "category": "essential",
+    "section_title": "Essential Services",
+    "section_desc": "Laundry, showers, haircuts, and other basic needs services",
+    "search_keywords": "medical health referrals free clinic white bird dove medical",
+    "name": "Health & Medical Service Referrals",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Medical",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Referrals",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Connections to free or low‑cost medical, dental, and mental health services in Lane County. Includes White Bird Clinic, Dove Medical (pregnancy/STI testing), and community health centers.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Varies by provider; call 211 for guidance"
+      },
+      {
+        "type": "text",
+        "text": "Multiple clinics across Eugene & Springfield"
+      },
+      {
+        "type": "link",
+        "href": "https://211info.org",
+        "text": "211info.org"
+      }
+    ]
+  },
+  {
+    "category": "calendar",
+    "section_title": "Community Support Events",
+    "section_desc": "Free, recurring events that help people in need with food, clothing, resources, and support",
+    "search_keywords": "food for lane county dining room free meals community restaurant style",
+    "name": "Food for Lane County Dining Room",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Weekly",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Meals",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Free restaurant-style meals served to adults and children in a dignified setting. Provides nutritious meals to those experiencing food insecurity. No identification or proof of need required.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Monday-Friday, 11:30am-1:00pm"
+      },
+      {
+        "type": "text",
+        "text": "270 W 8th Ave, Eugene"
+      },
+      {
+        "type": "link",
+        "href": "https://foodforlanecounty.org/food/dining-room/",
+        "text": "foodforlanecounty.org/dining-room"
+      }
+    ]
+  },
+  {
+    "category": "calendar",
+    "section_title": "Community Support Events",
+    "section_desc": "Free, recurring events that help people in need with food, clothing, resources, and support",
+    "search_keywords": "community resource fair free services employment housing health",
+    "name": "Community Resource Fairs",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Quarterly",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Multi-Service",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Regular community events connecting people with free resources including employment services, housing assistance, healthcare, legal aid, food programs, and more. Multiple organizations under one roof to simplify access to vital services.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Quarterly, check website for dates"
+      },
+      {
+        "type": "text",
+        "text": "Various locations in Eugene & Springfield"
+      },
+      {
+        "type": "link",
+        "href": "https://lanecountyor.gov",
+        "text": "lanecountyor.gov/communityevents"
+      }
+    ]
+  },
+  {
+    "category": "calendar",
+    "section_title": "Community Support Events",
+    "section_desc": "Free, recurring events that help people in need with food, clothing, resources, and support",
+    "search_keywords": "free clothing exchange community closet necessities",
+    "name": "Free Community Clothing Exchanges",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Monthly",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Clothing",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Monthly events where community members can access free clothing, shoes, and basic necessities. All items are donated and available at no cost. Also accepts donations of clean, gently used clothing to support others in need.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Monthly, typically 2nd Saturday"
+      },
+      {
+        "type": "text",
+        "text": "Various community centers & churches"
+      },
+      {
+        "type": "link",
+        "href": "https://stvincentschool.org/clothing-closet",
+        "text": "stvincentschool.org/clothing-closet"
+      }
+    ]
+  },
+  {
+    "category": "calendar",
+    "section_title": "Community Support Events",
+    "section_desc": "Free, recurring events that help people in need with food, clothing, resources, and support",
+    "search_keywords": "support groups recovery mental health addiction peer",
+    "name": "Community Support Groups",
+    "tags": [
+      {
+        "text": "Free",
+        "class": [
+          "tag",
+          "free"
+        ]
+      },
+      {
+        "text": "Weekly",
+        "class": [
+          "tag"
+        ]
+      },
+      {
+        "text": "Support",
+        "class": [
+          "tag"
+        ]
+      }
+    ],
+    "description": "Free peer support groups for mental health, addiction recovery, grief, and other challenges. Includes AA, NA, SMART Recovery, depression/anxiety support, and grief groups. Confidential, peer-led meetings open to all.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "Multiple times weekly, various locations"
+      },
+      {
+        "type": "text",
+        "text": "Churches, community centers, hospitals"
+      },
+      {
+        "type": "link",
+        "href": "https://aa.org",
+        "text": "aa.org (Alcoholics Anonymous)"
+      }
+    ]
+  }
+]
