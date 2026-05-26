@@ -74,8 +74,8 @@
     "category": "crisis",
     "section_title": "Crisis & Emergency",
     "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
-    "search_keywords": "white bird clinic cahoots mobile crisis response mental health street",
-    "name": "White Bird Clinic / CAHOOTS",
+    "search_keywords": "white bird clinic cahoots mobile crisis response mental health street verified may 2026",
+    "name": "Mobile Crisis Response (Lane County)",
     "tags": [
       {
         "text": "Crisis Response",
@@ -85,21 +85,22 @@
         ]
       }
     ],
-    "description": "White Bird Clinic provides walk-in mental health, crisis counseling, and medical services. CAHOOTS (Crisis Assistance Helping Out On The Streets) was a nationally recognized mobile crisis model — check current status. White Bird remains a primary mental health resource.",
+    "description": "24/7 county-wide behavioral health crisis support. Call local crisis line or 988; dispatch routes mobile crisis response when appropriate.",
     "meta": [
       {
         "type": "link",
-        "href": "tel:5416872366",
-        "text": "541-687-2366 (crisis)"
+        "href": "tel:5416821001",
+        "text": "541-682-1001 (Lane County Crisis Line)"
       },
       {
         "type": "link",
-        "href": "https://whitebirdclinic.org",
-        "text": "whitebirdclinic.org"
+        "href": "tel:988",
+        "text": "Call or text 988"
       },
       {
-        "type": "text",
-        "text": "341 E 12th Ave, Eugene"
+        "type": "link",
+        "href": "https://www.lanecountyor.gov/government/county_departments/health_and_human_services/lanecare/access_bh_services",
+        "text": "Lane County access page"
       }
     ]
   },
@@ -107,8 +108,8 @@
     "category": "crisis",
     "section_title": "Crisis & Emergency",
     "section_desc": "Immediate help for mental health crises, domestic violence, and urgent needs",
-    "search_keywords": "womenspace domestic violence shelter lane county",
-    "name": "Womenspace",
+    "search_keywords": "womenspace domestic violence shelter lane county verified may 2026",
+    "name": "Hope & Safety Alliance (formerly Womenspace)",
     "tags": [
       {
         "text": "DV Support",
@@ -125,17 +126,17 @@
         ]
       }
     ],
-    "description": "Prevents domestic violence in intimate partner relationships in Lane County and supports survivors in claiming personal power. Offers shelter, legal advocacy, counseling, and support groups.",
+    "description": "24/7 crisis and support services for survivors of domestic violence, sexual assault, and stalking, including safety planning and shelter access.",
     "meta": [
       {
         "type": "link",
-        "href": "tel:5413433223",
-        "text": "541-343-3223 (hotline)"
+        "href": "tel:8002812800",
+        "text": "800-281-2800 (24/7 hotline)"
       },
       {
         "type": "link",
-        "href": "https://womenspace.org",
-        "text": "womenspace.org"
+        "href": "https://www.hopesafetyalliance.org/get-help",
+        "text": "hopesafetyalliance.org/get-help"
       }
     ]
   },
@@ -415,7 +416,7 @@
         ]
       }
     ],
-    "description": "Manages Safe Spot Communities — safe, legal spaces for people experiencing homelessness. Operates employment support, healthcare connections, and recovery services that restore dignity and stability.",
+    "description": "Manages Safe Spot Communities \u2014 safe, legal spaces for people experiencing homelessness. Operates employment support, healthcare connections, and recovery services that restore dignity and stability.",
     "meta": [
       {
         "type": "link",
@@ -518,7 +519,7 @@
     "section_title": "Housing & Homelessness",
     "section_desc": "Shelters, transitional housing, rental assistance, and affordable housing",
     "search_keywords": "looking glass station 7 youth shelter runaway homeless teens counseling",
-    "name": "Looking Glass Community Services — Station #7",
+    "name": "Looking Glass Community Services \u2014 Station #7",
     "tags": [
       {
         "text": "Youth Shelter",
@@ -527,7 +528,7 @@
         ]
       }
     ],
-    "description": "Emergency shelter for runaway and homeless youth ages 11–20. Provides meals, showers, laundry, clothing, hygiene items, counseling, education support, and job training services.",
+    "description": "Emergency shelter for runaway and homeless youth ages 11\u201320. Provides meals, showers, laundry, clothing, hygiene items, counseling, education support, and job training services.",
     "meta": [
       {
         "type": "link",
@@ -599,12 +600,45 @@
         ]
       }
     ],
-    "description": "Opens emergency warming shelters across Eugene and Springfield when temperatures drop below 30°F. Run predominantly by volunteers; provides dinner, breakfast, and sleeping space. Pets always welcome. Text \"Join\" to 541-730-3071 for alerts.",
+    "description": "Opens emergency warming shelters across Eugene and Springfield when temperatures drop below 30\u00b0F. Run predominantly by volunteers; provides dinner, breakfast, and sleeping space. Pets always welcome. Text \"Join\" to 541-730-3071 for alerts.",
     "meta": [
       {
         "type": "link",
         "href": "https://www.svdp.us/services/shelter-assistance/egan-warming-centers/",
-        "text": "svdp.us — Egan Warming Centers"
+        "text": "svdp.us \u2014 Egan Warming Centers"
+      }
+    ]
+  },
+  {
+    "category": "housing",
+    "section_title": "Housing & Shelter",
+    "section_desc": "Emergency shelter, transitional housing, and homelessness support",
+    "search_keywords": "svdp schlies resource center eugene service station housing navigation benefits behavioral health",
+    "name": "Schlies Resource Center (St. Vincent de Paul)",
+    "tags": [
+      {
+        "text": "Navigation Hub",
+        "class": [
+          "tag",
+          "info"
+        ]
+      }
+    ],
+    "description": "Multi-agency service hub at St. Vincent de Paul's Eugene Service Station offering coordinated access to housing navigation, benefits, behavioral health, and related support services.",
+    "meta": [
+      {
+        "type": "text",
+        "text": "470 Highway 99 N, Eugene (adjacent to Eugene Service Station)"
+      },
+      {
+        "type": "link",
+        "href": "tel:5416896747",
+        "text": "541-689-6747 (ESS main line)"
+      },
+      {
+        "type": "link",
+        "href": "https://www.svdp.us/st-vincent-de-paul-announces-schlies-resource-center-at-ess/",
+        "text": "svdp.us/schlies-resource-center"
       }
     ]
   },
@@ -732,11 +766,11 @@
         ]
       }
     ],
-    "description": "Community-stocked refrigerators offering free food around the clock. Multiple locations including: 870 W. 16th Ave, 53 W. 24th Place, 2116 Grant St, and 1790 Alder St — all accessible by LTD bus.",
+    "description": "Community-stocked refrigerators offering free food around the clock. Multiple locations including: 870 W. 16th Ave, 53 W. 24th Place, 2116 Grant St, and 1790 Alder St \u2014 all accessible by LTD bus.",
     "meta": [
       {
         "type": "text",
-        "text": "Multiple locations — see Eugene community boards"
+        "text": "Multiple locations \u2014 see Eugene community boards"
       }
     ]
   },
@@ -745,7 +779,7 @@
     "section_title": "Food & Nutrition",
     "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
     "search_keywords": "salvation army food clothing rent eugene springfield assistance",
-    "name": "The Salvation Army — Eugene & Springfield",
+    "name": "The Salvation Army \u2014 Eugene & Springfield",
     "tags": [
       {
         "text": "Food",
@@ -847,7 +881,7 @@
     "section_title": "Food & Nutrition",
     "section_desc": "Food banks, meal programs, free pantries, and hunger relief",
     "search_keywords": "acorn cafe pay it forward free meals vegan eugene restaurant",
-    "name": "Acorn Café",
+    "name": "Acorn Caf\u00e9",
     "tags": [
       {
         "text": "Pay-It-Forward",
@@ -862,7 +896,7 @@
         ]
       }
     ],
-    "description": "Vegan café and community resource in Eugene. Features a pay-it-forward board with free meals pre-purchased by fellow patrons for anyone in need. No questions asked.",
+    "description": "Vegan caf\u00e9 and community resource in Eugene. Features a pay-it-forward board with free meals pre-purchased by fellow patrons for anyone in need. No questions asked.",
     "meta": [
       {
         "type": "link",
@@ -1109,7 +1143,7 @@
     "section_title": "Health & Mental Health",
     "section_desc": "Medical care, behavioral health, addiction recovery, and HIV/STI services",
     "search_keywords": "planned parenthood reproductive health family planning contraception STI",
-    "name": "Planned Parenthood — SW Oregon",
+    "name": "Planned Parenthood \u2014 SW Oregon",
     "tags": [
       {
         "text": "Reproductive Health",
@@ -1303,7 +1337,7 @@
     "section_title": "Children, Youth & Families",
     "section_desc": "Early childhood, parenting support, after-school programs, and youth development",
     "search_keywords": "friends of the children long-term mentoring youth poverty lane county",
-    "name": "Friends of the Children — Lane County",
+    "name": "Friends of the Children \u2014 Lane County",
     "tags": [
       {
         "text": "Mentoring",
@@ -1318,7 +1352,7 @@
         ]
       }
     ],
-    "description": "Provides long-term, paid professional mentors to children facing the greatest obstacles — beginning in kindergarten through high school graduation. Commits to each child regardless of circumstance.",
+    "description": "Provides long-term, paid professional mentors to children facing the greatest obstacles \u2014 beginning in kindergarten through high school graduation. Commits to each child regardless of circumstance.",
     "meta": [
       {
         "type": "link",
@@ -1347,7 +1381,7 @@
         ]
       }
     ],
-    "description": "Fosters community through diverse programs focused on youth development, health, and social responsibility. Operates after-school care for ages 4–12 across 12 schools, summer programs, fitness, and aquatics. Scholarships available.",
+    "description": "Fosters community through diverse programs focused on youth development, health, and social responsibility. Operates after-school care for ages 4\u201312 across 12 schools, summer programs, fitness, and aquatics. Scholarships available.",
     "meta": [
       {
         "type": "link",
@@ -1941,7 +1975,7 @@
       {
         "type": "link",
         "href": "tel:5412463697",
-        "text": "541‑246‑3697"
+        "text": "541\u2011246\u20113697"
       },
       {
         "type": "link",
@@ -1980,17 +2014,17 @@
         ]
       }
     ],
-    "description": "Program information and eligibility determination for seniors and adults with disabilities. Offers Senior Connections, Meals on Wheels, Family Caregiver support, long‑term care planning, Oregon Health Plan/Medicaid eligibility, SNAP, and transportation resources. A comprehensive resource for aging and disability services in Lane County.",
+    "description": "Program information and eligibility determination for seniors and adults with disabilities. Offers Senior Connections, Meals on Wheels, Family Caregiver support, long\u2011term care planning, Oregon Health Plan/Medicaid eligibility, SNAP, and transportation resources. A comprehensive resource for aging and disability services in Lane County.",
     "meta": [
       {
         "type": "link",
         "href": "tel:5416823353",
-        "text": "541‑682‑3353"
+        "text": "541\u2011682\u20113353"
       },
       {
         "type": "link",
         "href": "https://lcog-or.gov/sdslane",
-        "text": "lcog‑or.gov/sdslane"
+        "text": "lcog\u2011or.gov/sdslane"
       },
       {
         "type": "text",
@@ -2162,7 +2196,7 @@
         ]
       }
     ],
-    "description": "Provides legal support to activists and social justice movements. Defends civil liberties through litigation, education, and organizing support — particularly for environmental and social justice causes.",
+    "description": "Provides legal support to activists and social justice movements. Defends civil liberties through litigation, education, and organizing support \u2014 particularly for environmental and social justice causes.",
     "meta": [
       {
         "type": "link",
@@ -2403,7 +2437,7 @@
     "section_title": "Employment & Job Training",
     "section_desc": "Workforce development, vocational training, and barriers-to-employment support",
     "search_keywords": "worksource oregon lane county employment job search career center unemployment",
-    "name": "WorkSource Oregon — Lane County",
+    "name": "WorkSource Oregon \u2014 Lane County",
     "tags": [
       {
         "text": "Free",
@@ -2419,7 +2453,7 @@
         ]
       }
     ],
-    "description": "Oregon's primary workforce development system. Provides free employment services including job search assistance, career counseling, skills training, résumé help, and connections to education and employment programs.",
+    "description": "Oregon's primary workforce development system. Provides free employment services including job search assistance, career counseling, skills training, r\u00e9sum\u00e9 help, and connections to education and employment programs.",
     "meta": [
       {
         "type": "link",
@@ -2453,7 +2487,7 @@
         ]
       }
     ],
-    "description": "Provides youth employment and education through conservation work. Offers residential and non-residential programs for young people ages 15–25, combining environmental stewardship with workforce development and life skills.",
+    "description": "Provides youth employment and education through conservation work. Offers residential and non-residential programs for young people ages 15\u201325, combining environmental stewardship with workforce development and life skills.",
     "meta": [
       {
         "type": "link",
@@ -3185,7 +3219,7 @@
     "section_title": "Faith-Based Community Services",
     "section_desc": "Faith communities providing social services, community meals, and mutual aid",
     "search_keywords": "first christian church community resource hub meals downtown eugene",
-    "name": "First Christian Church — Community Hub",
+    "name": "First Christian Church \u2014 Community Hub",
     "tags": [
       {
         "text": "Meals",
@@ -3285,7 +3319,7 @@
     "section_title": "Essential Services",
     "section_desc": "Laundry, showers, haircuts, and other basic needs services",
     "search_keywords": "hosea youth services free laundry homeless eugene",
-    "name": "Hosea Youth Services — Free Laundry",
+    "name": "Hosea Youth Services \u2014 Free Laundry",
     "tags": [
       {
         "text": "Free",
@@ -3307,11 +3341,11 @@
         ]
       }
     ],
-    "description": "Free laundry services for youth and young adults experiencing homelessness. Walk‑in hours Monday, Wednesday, and Thursday evenings.",
+    "description": "Free laundry services for youth and young adults experiencing homelessness. Walk\u2011in hours Monday, Wednesday, and Thursday evenings.",
     "meta": [
       {
         "type": "text",
-        "text": "Mon, Wed, Thu 4:30pm–6:30pm"
+        "text": "Mon, Wed, Thu 4:30pm\u20136:30pm"
       },
       {
         "type": "text",
@@ -3320,7 +3354,7 @@
       {
         "type": "link",
         "href": "tel:5413445583",
-        "text": "541‑344‑5583"
+        "text": "541\u2011344\u20115583"
       }
     ]
   },
@@ -3339,7 +3373,7 @@
         ]
       },
       {
-        "text": "Multi‑Service",
+        "text": "Multi\u2011Service",
         "class": [
           "tag"
         ]
@@ -3355,7 +3389,7 @@
     "meta": [
       {
         "type": "text",
-        "text": "Daily 8:00am–5:00pm"
+        "text": "Daily 8:00am\u20135:00pm"
       },
       {
         "type": "text",
@@ -3364,7 +3398,7 @@
       {
         "type": "link",
         "href": "tel:5414618688",
-        "text": "541‑461‑8688"
+        "text": "541\u2011461\u20118688"
       }
     ]
   },
@@ -3373,7 +3407,7 @@
     "section_title": "Essential Services",
     "section_desc": "Laundry, showers, haircuts, and other basic needs services",
     "search_keywords": "carry it forward wash shower services free showers homeless eugene",
-    "name": "Carry It Forward — Wash Shower Services",
+    "name": "Carry It Forward \u2014 Wash Shower Services",
     "tags": [
       {
         "text": "Free",
@@ -3399,7 +3433,7 @@
     "meta": [
       {
         "type": "text",
-        "text": "Monday 9:30am–4:30pm, Wednesday 4:30pm–6:30pm"
+        "text": "Monday 9:30am\u20134:30pm, Wednesday 4:30pm\u20136:30pm"
       },
       {
         "type": "text",
@@ -3408,7 +3442,7 @@
       {
         "type": "link",
         "href": "tel:5416540139",
-        "text": "541‑654‑0139"
+        "text": "541\u2011654\u20110139"
       }
     ]
   },
@@ -3452,7 +3486,7 @@
       {
         "type": "link",
         "href": "tel:5413443251",
-        "text": "541‑344‑3251 (Eugene Mission)"
+        "text": "541\u2011344\u20113251 (Eugene Mission)"
       }
     ]
   },
@@ -3483,7 +3517,7 @@
         ]
       }
     ],
-    "description": "Connections to free or low‑cost medical, dental, and mental health services in Lane County. Includes White Bird Clinic, Dove Medical (pregnancy/STI testing), and community health centers.",
+    "description": "Connections to free or low\u2011cost medical, dental, and mental health services in Lane County. Includes White Bird Clinic, Dove Medical (pregnancy/STI testing), and community health centers.",
     "meta": [
       {
         "type": "text",
@@ -3504,8 +3538,8 @@
     "category": "calendar",
     "section_title": "Community Support Events",
     "section_desc": "Free, recurring events that help people in need with food, clothing, resources, and support",
-    "search_keywords": "food for lane county dining room free meals community restaurant style",
-    "name": "Food for Lane County Dining Room",
+    "search_keywords": "food for lane county dining room free meals community restaurant style the dining room",
+    "name": "The Dining Room (FOOD For Lane County)",
     "tags": [
       {
         "text": "Free",
@@ -3527,11 +3561,11 @@
         ]
       }
     ],
-    "description": "Free restaurant-style meals served to adults and children in a dignified setting. Provides nutritious meals to those experiencing food insecurity. No identification or proof of need required.",
+    "description": "Free hot meals served restaurant-style at no cost for adults and families with children.",
     "meta": [
       {
         "type": "text",
-        "text": "Monday-Friday, 11:30am-1:00pm"
+        "text": "Monday-Thursday, Noon-2:45pm"
       },
       {
         "type": "text",
@@ -3539,8 +3573,8 @@
       },
       {
         "type": "link",
-        "href": "https://foodforlanecounty.org/food/dining-room/",
-        "text": "foodforlanecounty.org/dining-room"
+        "href": "https://www.foodforlanecounty.org/get-help/fflcs-dining-room/",
+        "text": "foodforlanecounty.org/get-help/fflcs-dining-room"
       }
     ]
   },
