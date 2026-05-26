@@ -1,6 +1,6 @@
 # Lane County Community Resource Directory — Streamlit App
 
-A Streamlit version of the Lane County Community Resource Directory for Eugene & Springfield, Oregon. This app provides a searchable, filterable directory of 108 community organizations across 19 categories.
+A Streamlit version of the Lane County Community Resource Directory for Eugene & Springfield, Oregon. This app provides a searchable, filterable directory of 109 community organizations across 19 categories.
 
 ## Features
 
@@ -32,6 +32,11 @@ The app uses only Streamlit as a dependency; no additional setup required.
 ## Data Source
 
 Data was extracted from the original `index.html` file using `parse_data.py`. The parsing script uses BeautifulSoup4 but is not required for runtime.
+
+
+## Data Freshness
+
+Key crisis-contact entries were re-verified against official provider/government pages on May 26, 2026 (UTC), including Lane County Behavioral Health access information and Hope & Safety Alliance.
 
 ## Development
 
